@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8lnukmytfjhhO7o8wxvHomIqPtRXyWvk30off1oJHDqIXex95nC1ESrr0FfxyzgxLI272azuy6eao5GTBi0S7A==",
+  "success": true,
+  "projectFilePath": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\GroupAssignment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
+  ],
+  "logs": []
+}
