@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Business_Object
 {
-    class CategoryObject
+    public class CategoryObject
     {
+        public int CategoryID { get; set; }
+        public string CategoryName { get; set; }
+        public CategoryObject()
+        {
+
+        }
+        public CategoryObject(int cateid, string name)
+        {
+            CategoryID = cateid;
+            CategoryName = name;
+        }
     }
 }
