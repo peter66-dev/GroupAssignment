@@ -1,0 +1,5 @@
+{
+  "ConnectionString": {
+    "PetStoreDB": "Server=(local);uid=sa;pwd=sa;database=PetStore"
+  }
+}

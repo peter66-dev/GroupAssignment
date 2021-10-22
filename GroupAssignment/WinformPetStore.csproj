@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bunifu.UI.WinForms" Version="5.2.3" />
     <PackageReference Include="FontAwesome.Sharp" Version="5.15.3" />
   </ItemGroup>
 

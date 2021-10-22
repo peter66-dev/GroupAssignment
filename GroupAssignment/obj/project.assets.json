@@ -2,6 +2,81 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "Bunifu.UI.WinForms/5.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Bunifu.Licensing.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.1.5.3.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuButton.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuCheckBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuCircleProgress.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuColorTransition.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuDataGridView.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuDatePicker.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuDropdown.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuFormDock.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuGauge.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuGradientPanel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuGroupBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuImageButton.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuLabel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuLoader.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuPages.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuPanel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuPictureBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuProgressBar.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuRadioButton.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuRating.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuScrollBar.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuSeparator.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuShadowPanel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuShapes.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuSlider.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuSnackbar.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuTextBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuToggleSwitch.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuToolTip.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuTransition.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuUserControl.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.Deprecated.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Bunifu.Licensing.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.1.5.3.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuButton.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuCheckBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuCircleProgress.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuColorTransition.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuDataGridView.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuDatePicker.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuDropdown.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuFormDock.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuGauge.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuGradientPanel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuGroupBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuImageButton.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuLabel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuLoader.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuPages.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuPanel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuPictureBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuProgressBar.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuRadioButton.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuRating.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuScrollBar.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuSeparator.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuShadowPanel.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuShapes.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuSlider.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuSnackbar.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuTextBox.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuToggleSwitch.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuToolTip.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuTransition.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.BunifuUserControl.dll": {},
+          "lib/net40/Bunifu.UI.WinForms.Deprecated.dll": {}
+        }
+      },
       "FontAwesome.Sharp/5.15.3": {
         "type": "package",
         "compile": {
@@ -17,6 +92,87 @@
     }
   },
   "libraries": {
+    "Bunifu.UI.WinForms/5.2.3": {
+      "sha512": "cb6muJPQtijW3z82AerFnoB5fNzlkqpfG8BboMIPw1Ha897nUr/RnrbYg7BIGUqd2C6YidPSJISGYMED8OnVvw==",
+      "type": "package",
+      "path": "bunifu.ui.winforms/5.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.txt",
+        "bunifu.ui.winforms.5.2.3.nupkg.sha512",
+        "bunifu.ui.winforms.nuspec",
+        "lib/Assets/CHANGELOG.txt",
+        "lib/Assets/Icon.png",
+        "lib/Assets/LICENSE.txt",
+        "lib/net40/Bunifu.Licensing.dll",
+        "lib/net40/Bunifu.UI.WinForms.1.5.3.dll",
+        "lib/net40/Bunifu.UI.WinForms.1.5.3.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuButton.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuButton.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuCheckBox.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuCheckBox.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuCircleProgress.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuCircleProgress.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuColorTransition.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuColorTransition.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuDataGridView.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuDataGridView.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuDatePicker.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuDatePicker.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuDropdown.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuDropdown.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuFormDock.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuFormDock.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuGauge.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuGauge.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuGradientPanel.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuGradientPanel.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuGroupBox.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuGroupBox.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuImageButton.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuImageButton.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuLabel.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuLabel.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuLoader.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuLoader.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuPages.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuPages.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuPanel.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuPanel.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuPictureBox.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuPictureBox.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuProgressBar.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuProgressBar.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuRadioButton.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuRadioButton.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuRating.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuRating.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuScrollBar.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuScrollBar.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuSeparator.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuSeparator.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuShadowPanel.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuShadowPanel.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuShapes.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuShapes.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuSlider.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuSlider.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuSnackbar.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuSnackbar.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuTextBox.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuTextBox.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuToggleSwitch.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuToggleSwitch.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuToolTip.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuToolTip.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuTransition.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuTransition.xml",
+        "lib/net40/Bunifu.UI.WinForms.BunifuUserControl.dll",
+        "lib/net40/Bunifu.UI.WinForms.BunifuUserControl.xml",
+        "lib/net40/Bunifu.UI.WinForms.Deprecated.dll"
+      ]
+    },
     "FontAwesome.Sharp/5.15.3": {
       "sha512": "b72giuP5i2aR2W+u1gdYfYnTRkMIvI78idSDgrgcSV0aSE/nwJcMoh3sItxugMqOcNeIHxveGxAxcrcTYmwlHA==",
       "type": "package",
@@ -36,6 +192,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "Bunifu.UI.WinForms >= 5.2.3",
       "FontAwesome.Sharp >= 5.15.3"
     ]
   },
@@ -45,9 +202,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\GroupAssignment.csproj",
-      "projectName": "GroupAssignment",
-      "projectPath": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\GroupAssignment.csproj",
+      "projectUniqueName": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\WinformPetStore.csproj",
+      "projectName": "WinformPetStore",
+      "projectPath": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\WinformPetStore.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
       "outputPath": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\obj\\",
       "projectStyle": "PackageReference",
@@ -78,6 +235,10 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
+          "Bunifu.UI.WinForms": {
+            "target": "Package",
+            "version": "[5.2.3, )"
+          },
           "FontAwesome.Sharp": {
             "target": "Package",
             "version": "[5.15.3, )"
@@ -104,5 +265,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Bunifu.UI.WinForms 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Bunifu.UI.WinForms",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
 }

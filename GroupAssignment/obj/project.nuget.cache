@@ -1,10 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "8lnukmytfjhhO7o8wxvHomIqPtRXyWvk30off1oJHDqIXex95nC1ESrr0FfxyzgxLI272azuy6eao5GTBi0S7A==",
+  "dgSpecHash": "Crge/XKB9WbxOHpP1MyR5DE94HPuJVcDm9yCUL5gbGHBFDJrLODtQNNsxvApt5OIpn8eWQx5fBkhRgZ5WjOhNg==",
   "success": true,
-  "projectFilePath": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\GroupAssignment.csproj",
+  "projectFilePath": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\WinformPetStore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\bunifu.ui.winforms\\5.2.3\\bunifu.ui.winforms.5.2.3.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Bunifu.UI.WinForms 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Bunifu.UI.WinForms",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
 }

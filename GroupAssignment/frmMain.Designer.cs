@@ -1,7 +1,7 @@
 ﻿
 namespace GroupAssignment
 {
-    partial class MainForm
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -45,8 +45,8 @@ namespace GroupAssignment
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconButton();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbTime = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -67,8 +67,8 @@ namespace GroupAssignment
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 717);
-            this.panelMenu.TabIndex = 0;
+            this.panelMenu.Size = new System.Drawing.Size(220, 661);
+            this.panelMenu.TabIndex = 999;
             // 
             // btnIncome
             // 
@@ -86,7 +86,7 @@ namespace GroupAssignment
             this.btnIncome.Name = "btnIncome";
             this.btnIncome.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnIncome.Size = new System.Drawing.Size(220, 60);
-            this.btnIncome.TabIndex = 4;
+            this.btnIncome.TabIndex = 6;
             this.btnIncome.Text = "Income";
             this.btnIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIncome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -109,7 +109,7 @@ namespace GroupAssignment
             this.btnBillDetails.Name = "btnBillDetails";
             this.btnBillDetails.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnBillDetails.Size = new System.Drawing.Size(220, 60);
-            this.btnBillDetails.TabIndex = 3;
+            this.btnBillDetails.TabIndex = 5;
             this.btnBillDetails.Text = "BillDetails";
             this.btnBillDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBillDetails.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -132,7 +132,7 @@ namespace GroupAssignment
             this.btnBills.Name = "btnBills";
             this.btnBills.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnBills.Size = new System.Drawing.Size(220, 60);
-            this.btnBills.TabIndex = 2;
+            this.btnBills.TabIndex = 4;
             this.btnBills.Text = "Bills";
             this.btnBills.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBills.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -155,7 +155,7 @@ namespace GroupAssignment
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCustomers.Size = new System.Drawing.Size(220, 60);
-            this.btnCustomers.TabIndex = 1;
+            this.btnCustomers.TabIndex = 3;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustomers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -178,7 +178,7 @@ namespace GroupAssignment
             this.btnPets.Name = "btnPets";
             this.btnPets.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPets.Size = new System.Drawing.Size(220, 60);
-            this.btnPets.TabIndex = 0;
+            this.btnPets.TabIndex = 2;
             this.btnPets.Text = "Pets";
             this.btnPets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPets.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -192,18 +192,19 @@ namespace GroupAssignment
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 140);
-            this.panelLogo.TabIndex = 0;
+            this.panelLogo.TabIndex = 777;
             // 
             // btnHome
             // 
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.Image = global::GroupAssignment.Properties.Resources.logo;
+            this.btnHome.Image = global::WinformPetStore.Properties.Resources.logo;
             this.btnHome.Location = new System.Drawing.Point(51, 25);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(112, 90);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelTitleBar
             // 
@@ -216,8 +217,8 @@ namespace GroupAssignment
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(763, 75);
-            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.Size = new System.Drawing.Size(1064, 75);
+            this.panelTitleBar.TabIndex = 999;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // btnClose
@@ -226,7 +227,7 @@ namespace GroupAssignment
             this.btnClose.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.Location = new System.Drawing.Point(730, 2);
+            this.btnClose.Location = new System.Drawing.Point(1028, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(27, 24);
             this.btnClose.TabIndex = 0;
@@ -240,7 +241,7 @@ namespace GroupAssignment
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMinimize.IconColor = System.Drawing.Color.Black;
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimize.Location = new System.Drawing.Point(664, 3);
+            this.btnMinimize.Location = new System.Drawing.Point(962, 3);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(27, 23);
             this.btnMinimize.TabIndex = 0;
@@ -254,7 +255,7 @@ namespace GroupAssignment
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaximize.IconColor = System.Drawing.Color.Black;
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.Location = new System.Drawing.Point(697, 3);
+            this.btnMaximize.Location = new System.Drawing.Point(995, 3);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(27, 23);
             this.btnMaximize.TabIndex = 0;
@@ -269,7 +270,7 @@ namespace GroupAssignment
             this.lbTitleChildForm.Location = new System.Drawing.Point(54, 31);
             this.lbTitleChildForm.Name = "lbTitleChildForm";
             this.lbTitleChildForm.Size = new System.Drawing.Size(40, 15);
-            this.lbTitleChildForm.TabIndex = 3;
+            this.lbTitleChildForm.TabIndex = 888;
             this.lbTitleChildForm.Text = "Home";
             // 
             // iconCurrentChildForm
@@ -281,7 +282,7 @@ namespace GroupAssignment
             this.iconCurrentChildForm.Location = new System.Drawing.Point(16, 22);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
-            this.iconCurrentChildForm.TabIndex = 2;
+            this.iconCurrentChildForm.TabIndex = 999;
             this.iconCurrentChildForm.UseVisualStyleBackColor = true;
             // 
             // panelShadow
@@ -290,7 +291,7 @@ namespace GroupAssignment
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(763, 10);
+            this.panelShadow.Size = new System.Drawing.Size(1064, 10);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -301,19 +302,8 @@ namespace GroupAssignment
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 85);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(763, 632);
-            this.panelDesktop.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::GroupAssignment.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(338, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 153);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panelDesktop.Size = new System.Drawing.Size(1064, 576);
+            this.panelDesktop.TabIndex = 999;
             // 
             // lbTime
             // 
@@ -321,24 +311,37 @@ namespace GroupAssignment
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTime.Location = new System.Drawing.Point(403, 340);
+            this.lbTime.Location = new System.Drawing.Point(554, 312);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(67, 19);
             this.lbTime.TabIndex = 4;
             this.lbTime.Text = "00:00:00";
             // 
-            // MainForm
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::WinformPetStore.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(489, 123);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 153);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 717);
+            this.ClientSize = new System.Drawing.Size(1284, 661);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Name = "MainForm";
+            this.MinimumSize = new System.Drawing.Size(1300, 700);
+            this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);

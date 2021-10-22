@@ -12,14 +12,14 @@ using FontAwesome.Sharp;
 
 namespace GroupAssignment
 {
-    public partial class MainForm : Form
+    public partial class frmMain : Form
     {
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
         //Constructor
-        public MainForm()
+        public frmMain()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -30,6 +30,18 @@ namespace GroupAssignment
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            lbTime.Text = DateTime.Now.ToLongTimeString();
         }
         //Structs
         private struct RGBColors
@@ -117,27 +129,24 @@ namespace GroupAssignment
         private void btnPets_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new SecondForm());
         }
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new SecondForm());
         }
         private void btnBills_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new SecondForm());
+            OpenChildForm(new frmBillManagement());
         }
         private void btnBillDetails_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new SecondForm());
+            OpenChildForm(new frmBillDetails());
         }
         private void btnIncome_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new SecondForm());
         }
 
         //Drag Form
@@ -175,17 +184,12 @@ namespace GroupAssignment
             else
                 FormBorderStyle = FormBorderStyle.Sizable;
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Timer timer = new Timer();
-            timer.Interval = 1000;
-            timer.Tick += Timer_Tick;
-            timer.Start();
-        }
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            lbTime.Text = DateTime.Now.ToLongTimeString();
+            if (MessageBox.Show("Are you sure to quit?", "Message", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

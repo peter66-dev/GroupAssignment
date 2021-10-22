@@ -6,6 +6,146 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
+      "Bunifu.UI.WinForms/5.2.3": {
+        "runtime": {
+          "lib/net40/Bunifu.Licensing.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.1.5.3.dll": {
+            "assemblyVersion": "1.5.3.0",
+            "fileVersion": "1.5.3.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuButton.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuCheckBox.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuCircleProgress.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuColorTransition.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuDataGridView.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuDatePicker.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuDropdown.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuFormDock.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuGauge.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuGradientPanel.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuGroupBox.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuImageButton.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuLabel.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuLoader.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuPages.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuPanel.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuPictureBox.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuProgressBar.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuRadioButton.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuRating.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuScrollBar.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuSeparator.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuShadowPanel.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuShapes.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuSlider.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuSnackbar.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuTextBox.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuToggleSwitch.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuToolTip.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuTransition.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.BunifuUserControl.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          },
+          "lib/net40/Bunifu.UI.WinForms.Deprecated.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          }
+        }
+      },
       "FontAwesome.Sharp/5.15.3": {
         "runtime": {
           "lib/netcoreapp3.1/FontAwesome.Sharp.dll": {
@@ -17,6 +157,13 @@
     }
   },
   "libraries": {
+    "Bunifu.UI.WinForms/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cb6muJPQtijW3z82AerFnoB5fNzlkqpfG8BboMIPw1Ha897nUr/RnrbYg7BIGUqd2C6YidPSJISGYMED8OnVvw==",
+      "path": "bunifu.ui.winforms/5.2.3",
+      "hashPath": "bunifu.ui.winforms.5.2.3.nupkg.sha512"
+    },
     "FontAwesome.Sharp/5.15.3": {
       "type": "package",
       "serviceable": true,

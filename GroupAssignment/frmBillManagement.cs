@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GroupAssignment
 {
-    public partial class SecondForm : Form
+    public partial class frmBillManagement : Form
     {
-        public SecondForm()
+        public frmBillManagement()
         {
             InitializeComponent();
         }
