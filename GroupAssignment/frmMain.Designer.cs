@@ -110,7 +110,7 @@ namespace GroupAssignment
             this.btnBillDetails.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnBillDetails.Size = new System.Drawing.Size(220, 60);
             this.btnBillDetails.TabIndex = 5;
-            this.btnBillDetails.Text = "BillDetails";
+            this.btnBillDetails.Text = "Create bill";
             this.btnBillDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBillDetails.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBillDetails.UseVisualStyleBackColor = true;

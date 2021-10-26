@@ -111,6 +111,35 @@ namespace DataAccess
             return bill;
         }
 
+        public int GetTotalBill()
+        {
+            int count = 0;
+            connection = new SqlConnection(GetConnectionString());
+            command = new SqlCommand("select count(BillID) as Total from tblBills", connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader rs = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (rs.HasRows)
+                {
+                    if (rs.Read())
+                    {
+                        count = rs.GetInt32("Total");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return count;
+        }
+
         public void InsertBill(int id, decimal total)// không nên để khóa chính tự tăng ở đây
         {
             connection = new SqlConnection(GetConnectionString());

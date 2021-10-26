@@ -114,7 +114,6 @@ namespace DataAccess
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
             }
             finally
             {
@@ -187,6 +186,93 @@ namespace DataAccess
             connection = new SqlConnection(GetConnectionString());
             command = new SqlCommand("update tblPets set Status = 0 where PetID = @PetID", connection);
             command.Parameters.AddWithValue("@PetID", id);
+            try
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public List<string> CheckQuantity(List<PetObject> cart)
+        {
+            List<string> result = new List<string>();
+            foreach (var pet in cart)
+            {
+                int quantity = GetQuantityByPetID(pet.PetID);// Số lượng trong kho
+                if (quantity < pet.QuantityInStock)// kho < số mua
+                {
+                    result.Add(pet.PetName);
+                }
+            }
+            return result;
+        }
+
+        int GetQuantityByPetID(int petID)
+        {
+            int quantity = 0;
+            connection = new SqlConnection(GetConnectionString());
+            command = new SqlCommand("select QuantityInStock from tblPets where PetID = @PetID", connection);
+            command.Parameters.AddWithValue("@PetID", petID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (reader.HasRows)
+                {
+                    if (reader.Read())
+                    {
+                        quantity = reader.GetInt32("QuantityInStock");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return quantity;
+        }
+
+        public void SubQuantityProduct(List<PetObject> cart)
+        {
+            connection = new SqlConnection(GetConnectionString());
+
+            try
+            {
+                connection.Open();
+                foreach (var pet in cart)
+                {
+                    command = new SqlCommand("update tblPets set  QuantityInStock = QuantityInStock - @QuantityBuy where PetID = @PetID", connection);
+                    command.Parameters.AddWithValue("@QuantityBuy", pet.QuantityInStock);
+                    command.Parameters.AddWithValue("@PetID", pet.PetID);
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public void SetStatusPet()
+        {
+            connection = new SqlConnection(GetConnectionString());
+            command = new SqlCommand("update tblPets set Status = 0 where QuantityInStock = 0", connection);
             try
             {
                 connection.Open();

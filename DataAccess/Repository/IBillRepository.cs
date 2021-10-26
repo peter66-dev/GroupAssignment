@@ -14,5 +14,6 @@ namespace DataAccess.Repository
         public void InsertBill(int id, decimal total);
         public void UpdateBill(int id, decimal total);
         public void RemoveBill(int id);
+        public int GetTotalBill();
     }
 }

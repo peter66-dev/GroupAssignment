@@ -14,5 +14,8 @@ namespace DataAccess.Repository
         public void InsertPet(PetObject pet);
         public void UpdatePet(PetObject pet);
         public void RemovePet(int id);
+        public List<string> CheckQuantity(List<PetObject> cart);
+        public void SubQuantityProduct(List<PetObject> cart);
+        public void SetStatusPet();
     }
 }

@@ -20,6 +20,17 @@ namespace Business_Object
 
         }
 
+        public PetObject(int id, string name, string color, int age, decimal price, bool gender, int quantityBuy)
+        {
+            PetID = id;
+            PetName = name;
+            Color = color;
+            Age = age;
+            ExportPrice = price;
+            Gender = gender;
+            QuantityInStock = quantityBuy;
+        }
+
         public PetObject(int id, string name, int age, bool gen, string color, int quantity, int cateid, decimal import, decimal export, bool status)
         {
             PetID = id;
