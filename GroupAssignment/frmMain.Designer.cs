@@ -30,8 +30,8 @@ namespace GroupAssignment
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnIncome = new FontAwesome.Sharp.IconButton();
-            this.btnBillDetails = new FontAwesome.Sharp.IconButton();
+            this.btnStatistic = new FontAwesome.Sharp.IconButton();
+            this.btnCreateBill = new FontAwesome.Sharp.IconButton();
             this.btnBills = new FontAwesome.Sharp.IconButton();
             this.btnCustomers = new FontAwesome.Sharp.IconButton();
             this.btnPets = new FontAwesome.Sharp.IconButton();
@@ -58,8 +58,8 @@ namespace GroupAssignment
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelMenu.Controls.Add(this.btnIncome);
-            this.panelMenu.Controls.Add(this.btnBillDetails);
+            this.panelMenu.Controls.Add(this.btnStatistic);
+            this.panelMenu.Controls.Add(this.btnCreateBill);
             this.panelMenu.Controls.Add(this.btnBills);
             this.panelMenu.Controls.Add(this.btnCustomers);
             this.panelMenu.Controls.Add(this.btnPets);
@@ -70,51 +70,51 @@ namespace GroupAssignment
             this.panelMenu.Size = new System.Drawing.Size(220, 661);
             this.panelMenu.TabIndex = 999;
             // 
-            // btnIncome
+            // btnStatistic
             // 
-            this.btnIncome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIncome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIncome.FlatAppearance.BorderSize = 0;
-            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIncome.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnIncome.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
-            this.btnIncome.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnIncome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnIncome.IconSize = 32;
-            this.btnIncome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIncome.Location = new System.Drawing.Point(0, 380);
-            this.btnIncome.Name = "btnIncome";
-            this.btnIncome.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnIncome.Size = new System.Drawing.Size(220, 60);
-            this.btnIncome.TabIndex = 6;
-            this.btnIncome.Text = "Income";
-            this.btnIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIncome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnIncome.UseVisualStyleBackColor = true;
-            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
+            this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStatistic.FlatAppearance.BorderSize = 0;
+            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatistic.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnStatistic.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
+            this.btnStatistic.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnStatistic.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnStatistic.IconSize = 32;
+            this.btnStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatistic.Location = new System.Drawing.Point(0, 380);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnStatistic.Size = new System.Drawing.Size(220, 60);
+            this.btnStatistic.TabIndex = 6;
+            this.btnStatistic.Text = "Statistic";
+            this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStatistic.UseVisualStyleBackColor = true;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
-            // btnBillDetails
+            // btnCreateBill
             // 
-            this.btnBillDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBillDetails.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBillDetails.FlatAppearance.BorderSize = 0;
-            this.btnBillDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBillDetails.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBillDetails.IconChar = FontAwesome.Sharp.IconChar.AmazonPay;
-            this.btnBillDetails.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnBillDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBillDetails.IconSize = 32;
-            this.btnBillDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBillDetails.Location = new System.Drawing.Point(0, 320);
-            this.btnBillDetails.Name = "btnBillDetails";
-            this.btnBillDetails.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnBillDetails.Size = new System.Drawing.Size(220, 60);
-            this.btnBillDetails.TabIndex = 5;
-            this.btnBillDetails.Text = "Create bill";
-            this.btnBillDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBillDetails.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBillDetails.UseVisualStyleBackColor = true;
-            this.btnBillDetails.Click += new System.EventHandler(this.btnBillDetails_Click);
+            this.btnCreateBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCreateBill.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCreateBill.FlatAppearance.BorderSize = 0;
+            this.btnCreateBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateBill.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCreateBill.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
+            this.btnCreateBill.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnCreateBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCreateBill.IconSize = 32;
+            this.btnCreateBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreateBill.Location = new System.Drawing.Point(0, 320);
+            this.btnCreateBill.Name = "btnCreateBill";
+            this.btnCreateBill.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCreateBill.Size = new System.Drawing.Size(220, 60);
+            this.btnCreateBill.TabIndex = 5;
+            this.btnCreateBill.Text = "Create bill";
+            this.btnCreateBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreateBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCreateBill.UseVisualStyleBackColor = true;
+            this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
             // 
             // btnBills
             // 
@@ -360,8 +360,8 @@ namespace GroupAssignment
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton btnPets;
         private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton btnIncome;
-        private FontAwesome.Sharp.IconButton btnBillDetails;
+        private FontAwesome.Sharp.IconButton btnStatistic;
+        private FontAwesome.Sharp.IconButton btnCreateBill;
         private FontAwesome.Sharp.IconButton btnBills;
         private FontAwesome.Sharp.IconButton btnCustomers;
         private System.Windows.Forms.Panel panelTitleBar;

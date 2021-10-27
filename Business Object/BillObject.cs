@@ -9,8 +9,8 @@ namespace Business_Object
     public class BillObject
     {
         public int BillID { get; set; }
-        public decimal Total { get; set; }
         public DateTime Date { get; set; }
+        public decimal Total { get; set; }
         public bool Status { get; set; }
         public BillObject()
         {

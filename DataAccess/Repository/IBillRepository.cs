@@ -15,5 +15,9 @@ namespace DataAccess.Repository
         public void UpdateBill(int id, decimal total);
         public void RemoveBill(int id);
         public int GetTotalBill();
+        public List<BillObject> GetBillListByDate(DateTime start, DateTime end); 
+        public decimal GetTotalImportMoney();
+        public List<BillObject> SortByTotalAscending();
+        public List<BillObject> SortByTotalDescending();
     }
 }

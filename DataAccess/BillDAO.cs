@@ -77,6 +77,73 @@ namespace DataAccess
             }
             return list;
         }
+        public List<BillObject> SortByTotalAscending()
+        {
+            connection = new SqlConnection(GetConnectionString());
+            List<BillObject> list = new List<BillObject>();
+            command = new SqlCommand("select BillID, Total, Date, Status from tblBills ORDER BY Total asc", connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader rs = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (rs.HasRows)
+                {
+                    while (rs.Read())
+                    {
+                        BillObject bill = new BillObject();
+                        bill.BillID = rs.GetInt32("BillID");
+                        bill.Total = Math.Round(rs.GetDecimal("Total"));
+                        bill.Date = rs.GetDateTime("Date");
+                        bill.Status = rs.GetBoolean("Status");
+                        list.Add(bill);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return list;
+        }
+
+        public List<BillObject> SortByTotalDescending()
+        {
+            connection = new SqlConnection(GetConnectionString());
+            List<BillObject> list = new List<BillObject>();
+            command = new SqlCommand("select BillID, Total, Date, Status from tblBills ORDER BY Total desc", connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader rs = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (rs.HasRows)
+                {
+                    while (rs.Read())
+                    {
+                        BillObject bill = new BillObject();
+                        bill.BillID = rs.GetInt32("BillID");
+                        bill.Total = Math.Round(rs.GetDecimal("Total"));
+                        bill.Date = rs.GetDateTime("Date");
+                        bill.Status = rs.GetBoolean("Status");
+                        list.Add(bill);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return list;
+        }
 
         public BillObject GetBillByID(int id)
         {
@@ -201,6 +268,74 @@ namespace DataAccess
             {
                 connection.Close();
             }
+        }
+        public List<BillObject> GetBillListByDate(DateTime start, DateTime end)
+        {
+            connection = new SqlConnection(GetConnectionString());
+            List<BillObject> list = new List<BillObject>();
+            command = new SqlCommand("select BillID, Total, Date, Status from tblBills where @StartDate <= [Date] AND @EndDate >= [Date] and Status = 1", connection);
+            command.Parameters.AddWithValue("@StartDate", start);
+            command.Parameters.AddWithValue("@EndDate", end);
+            try
+            {
+                connection.Open();
+                SqlDataReader rs = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (rs.HasRows)
+                {
+                    while (rs.Read())
+                    {
+                        BillObject bill = new BillObject();
+                        bill.BillID = rs.GetInt32("BillID");
+                        bill.Total = Math.Round(rs.GetDecimal("Total"));
+                        bill.Date = rs.GetDateTime("Date");
+                        bill.Status = true;
+                        list.Add(bill);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return list;
+        }
+
+        public decimal GetTotalImportMoney()
+        {
+            decimal total = 0;
+            string sql = "select Statistic.PetID, p.ImportPrice, Statistic.total as [Sold  Quantity] " +
+                "from (select PetID, sum(QuantityBuy) as total from tblBillDetails where BillID in " +
+                "(select BillID from tblBills where Status = 1) group by PetID) Statistic " +
+                "left join tblPets p on Statistic.PetID = p.PetID";
+            connection = new SqlConnection(GetConnectionString());
+            command = new SqlCommand(sql, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader rs = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (rs.HasRows)
+                {
+                    while (rs.Read())
+                    {
+                        total += rs.GetDecimal("ImportPrice") * rs.GetInt32("Sold  Quantity");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return Math.Round(total, 2);
         }
     }
 }

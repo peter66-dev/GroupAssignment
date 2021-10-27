@@ -64,8 +64,8 @@ namespace DataAccess
                         pet.QuantityInStock = rs.GetInt32("QuantityInStock");
                         pet.Color = rs.GetString("Color");
                         pet.CategoryID = rs.GetInt32("CategoryID");
-                        pet.ImportPrice = rs.GetDecimal("ImportPrice");
-                        pet.ExportPrice = rs.GetDecimal("ExportPrice");
+                        pet.ImportPrice = Math.Round(rs.GetDecimal("ImportPrice"),2);
+                        pet.ExportPrice = Math.Round(rs.GetDecimal("ExportPrice"), 2);
                         pet.Status = rs.GetBoolean("Status");
                         list.Add(pet);
                     }

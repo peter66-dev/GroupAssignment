@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using WinformPetStore;
 
 namespace GroupAssignment
 {
@@ -129,6 +130,7 @@ namespace GroupAssignment
         private void btnPets_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new frmPetss());
         }
         private void btnCustomers_Click(object sender, EventArgs e)
         {
@@ -139,14 +141,15 @@ namespace GroupAssignment
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new frmBillManagement());
         }
-        private void btnBillDetails_Click(object sender, EventArgs e)
+        private void btnCreateBill_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new frmBillDetails());
         }
-        private void btnIncome_Click(object sender, EventArgs e)
+        private void btnStatistic_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new frmStatistics());
         }
 
         //Drag Form

@@ -30,11 +30,6 @@ namespace GroupAssignment
         private void InitializeComponent()
         {
             this.dgvCart = new System.Windows.Forms.DataGridView();
-            this.PetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantityBuy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbPetInfo = new System.Windows.Forms.Label();
             this.txtPetID = new System.Windows.Forms.TextBox();
             this.lbPetID = new System.Windows.Forms.Label();
@@ -71,15 +66,18 @@ namespace GroupAssignment
             this.lbAddress = new System.Windows.Forms.Label();
             this.lbCusGender = new System.Windows.Forms.Label();
             this.lbCusName = new System.Windows.Forms.Label();
-            this.lbEmail = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
             this.txtCusName = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.lbCusInfo = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.lbColor = new System.Windows.Forms.Label();
+            this.PetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuantityBuy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantityBuy)).BeginInit();
             this.SuspendLayout();
@@ -106,31 +104,6 @@ namespace GroupAssignment
             this.dgvCart.Size = new System.Drawing.Size(580, 289);
             this.dgvCart.TabIndex = 100;
             // 
-            // PetID
-            // 
-            this.PetID.HeaderText = "Pet ID";
-            this.PetID.Name = "PetID";
-            // 
-            // PetName
-            // 
-            this.PetName.HeaderText = "Pet Name";
-            this.PetName.Name = "PetName";
-            // 
-            // Gender
-            // 
-            this.Gender.HeaderText = "Gender";
-            this.Gender.Name = "Gender";
-            // 
-            // QuantityBuy
-            // 
-            this.QuantityBuy.HeaderText = "Quantity Buy";
-            this.QuantityBuy.Name = "QuantityBuy";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Unit Price (VND)";
-            this.Price.Name = "Price";
-            // 
             // lbPetInfo
             // 
             this.lbPetInfo.AutoSize = true;
@@ -138,9 +111,9 @@ namespace GroupAssignment
             this.lbPetInfo.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbPetInfo.Location = new System.Drawing.Point(12, 111);
             this.lbPetInfo.Name = "lbPetInfo";
-            this.lbPetInfo.Size = new System.Drawing.Size(139, 22);
+            this.lbPetInfo.Size = new System.Drawing.Size(137, 22);
             this.lbPetInfo.TabIndex = 100;
-            this.lbPetInfo.Text = "Pet Information";
+            this.lbPetInfo.Text = "Pet information";
             // 
             // txtPetID
             // 
@@ -148,7 +121,7 @@ namespace GroupAssignment
             this.txtPetID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPetID.Name = "txtPetID";
             this.txtPetID.Size = new System.Drawing.Size(133, 22);
-            this.txtPetID.TabIndex = 3;
+            this.txtPetID.TabIndex = 5;
             this.txtPetID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPetID.TextChanged += new System.EventHandler(this.txtPetID_TextChanged);
             // 
@@ -191,7 +164,7 @@ namespace GroupAssignment
             this.txtPetName.Location = new System.Drawing.Point(449, 148);
             this.txtPetName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPetName.Name = "txtPetName";
-            this.txtPetName.Size = new System.Drawing.Size(120, 22);
+            this.txtPetName.Size = new System.Drawing.Size(143, 22);
             this.txtPetName.TabIndex = 100;
             this.txtPetName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -203,9 +176,9 @@ namespace GroupAssignment
             this.lbPetName.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbPetName.Location = new System.Drawing.Point(329, 151);
             this.lbPetName.Name = "lbPetName";
-            this.lbPetName.Size = new System.Drawing.Size(59, 15);
+            this.lbPetName.Size = new System.Drawing.Size(57, 15);
             this.lbPetName.TabIndex = 333;
-            this.lbPetName.Text = "Pet Name";
+            this.lbPetName.Text = "Pet name";
             // 
             // txtUnitPrice
             // 
@@ -214,7 +187,7 @@ namespace GroupAssignment
             this.txtUnitPrice.Location = new System.Drawing.Point(449, 176);
             this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(120, 22);
+            this.txtUnitPrice.Size = new System.Drawing.Size(143, 22);
             this.txtUnitPrice.TabIndex = 100;
             this.txtUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -226,9 +199,9 @@ namespace GroupAssignment
             this.lbUnitPrice.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbUnitPrice.Location = new System.Drawing.Point(329, 180);
             this.lbUnitPrice.Name = "lbUnitPrice";
-            this.lbUnitPrice.Size = new System.Drawing.Size(63, 15);
+            this.lbUnitPrice.Size = new System.Drawing.Size(61, 15);
             this.lbUnitPrice.TabIndex = 333;
-            this.lbUnitPrice.Text = "Unit Price";
+            this.lbUnitPrice.Text = "Unit price";
             // 
             // txtGender
             // 
@@ -259,16 +232,16 @@ namespace GroupAssignment
             this.lbQuantityBuy.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbQuantityBuy.Location = new System.Drawing.Point(633, 184);
             this.lbQuantityBuy.Name = "lbQuantityBuy";
-            this.lbQuantityBuy.Size = new System.Drawing.Size(80, 15);
+            this.lbQuantityBuy.Size = new System.Drawing.Size(77, 15);
             this.lbQuantityBuy.TabIndex = 3;
-            this.lbQuantityBuy.Text = "Quantity Buy";
+            this.lbQuantityBuy.Text = "Quantity buy";
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(872, 99);
+            this.btnAdd.Location = new System.Drawing.Point(754, 38);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 45);
@@ -286,7 +259,7 @@ namespace GroupAssignment
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(139, 46);
-            this.btnSave.TabIndex = 10;
+            this.btnSave.TabIndex = 11;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -299,9 +272,9 @@ namespace GroupAssignment
             this.lbCalculation.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbCalculation.Location = new System.Drawing.Point(635, 221);
             this.lbCalculation.Name = "lbCalculation";
-            this.lbCalculation.Size = new System.Drawing.Size(166, 22);
+            this.lbCalculation.Size = new System.Drawing.Size(162, 22);
             this.lbCalculation.TabIndex = 100;
-            this.lbCalculation.Text = "Calculation Details";
+            this.lbCalculation.Text = "Calculation details";
             // 
             // txtSubTotal
             // 
@@ -322,9 +295,9 @@ namespace GroupAssignment
             this.lbSubTotal.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbSubTotal.Location = new System.Drawing.Point(635, 261);
             this.lbSubTotal.Name = "lbSubTotal";
-            this.lbSubTotal.Size = new System.Drawing.Size(58, 15);
+            this.lbSubTotal.Size = new System.Drawing.Size(55, 15);
             this.lbSubTotal.TabIndex = 333;
-            this.lbSubTotal.Text = "Sub Total";
+            this.lbSubTotal.Text = "Sub total";
             // 
             // txtDiscount
             // 
@@ -333,7 +306,7 @@ namespace GroupAssignment
             this.txtDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(153, 22);
-            this.txtDiscount.TabIndex = 6;
+            this.txtDiscount.TabIndex = 7;
             this.txtDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbDiscount
@@ -367,9 +340,9 @@ namespace GroupAssignment
             this.lbGrandTotal.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbGrandTotal.Location = new System.Drawing.Point(635, 336);
             this.lbGrandTotal.Name = "lbGrandTotal";
-            this.lbGrandTotal.Size = new System.Drawing.Size(71, 15);
+            this.lbGrandTotal.Size = new System.Drawing.Size(68, 15);
             this.lbGrandTotal.TabIndex = 333;
-            this.lbGrandTotal.Text = "Grand Total";
+            this.lbGrandTotal.Text = "Grand total";
             // 
             // txtPaidAmount
             // 
@@ -378,7 +351,7 @@ namespace GroupAssignment
             this.txtPaidAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPaidAmount.Name = "txtPaidAmount";
             this.txtPaidAmount.Size = new System.Drawing.Size(153, 22);
-            this.txtPaidAmount.TabIndex = 8;
+            this.txtPaidAmount.TabIndex = 9;
             this.txtPaidAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbPaidAmount
@@ -389,9 +362,9 @@ namespace GroupAssignment
             this.lbPaidAmount.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbPaidAmount.Location = new System.Drawing.Point(635, 410);
             this.lbPaidAmount.Name = "lbPaidAmount";
-            this.lbPaidAmount.Size = new System.Drawing.Size(76, 15);
+            this.lbPaidAmount.Size = new System.Drawing.Size(74, 15);
             this.lbPaidAmount.TabIndex = 333;
-            this.lbPaidAmount.Text = "Paid Amount";
+            this.lbPaidAmount.Text = "Paid amount";
             // 
             // txtReturnAmount
             // 
@@ -412,9 +385,9 @@ namespace GroupAssignment
             this.lbReturnAmount.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbReturnAmount.Location = new System.Drawing.Point(635, 444);
             this.lbReturnAmount.Name = "lbReturnAmount";
-            this.lbReturnAmount.Size = new System.Drawing.Size(91, 15);
+            this.lbReturnAmount.Size = new System.Drawing.Size(89, 15);
             this.lbReturnAmount.TabIndex = 333;
-            this.lbReturnAmount.Text = "Return Amount";
+            this.lbReturnAmount.Text = "Return amount";
             // 
             // lbQuantityInStock
             // 
@@ -424,9 +397,9 @@ namespace GroupAssignment
             this.lbQuantityInStock.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbQuantityInStock.Location = new System.Drawing.Point(329, 211);
             this.lbQuantityInStock.Name = "lbQuantityInStock";
-            this.lbQuantityInStock.Size = new System.Drawing.Size(104, 15);
+            this.lbQuantityInStock.Size = new System.Drawing.Size(102, 15);
             this.lbQuantityInStock.TabIndex = 333;
-            this.lbQuantityInStock.Text = "Quantity In Stock";
+            this.lbQuantityInStock.Text = "Quantity in stock";
             // 
             // txtQuantityBuy
             // 
@@ -445,7 +418,7 @@ namespace GroupAssignment
             0});
             this.txtQuantityBuy.Name = "txtQuantityBuy";
             this.txtQuantityBuy.Size = new System.Drawing.Size(120, 22);
-            this.txtQuantityBuy.TabIndex = 4;
+            this.txtQuantityBuy.TabIndex = 6;
             this.txtQuantityBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtQuantityBuy.Value = new decimal(new int[] {
             1,
@@ -460,7 +433,7 @@ namespace GroupAssignment
             this.txtQuantityInStock.Location = new System.Drawing.Point(449, 203);
             this.txtQuantityInStock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQuantityInStock.Name = "txtQuantityInStock";
-            this.txtQuantityInStock.Size = new System.Drawing.Size(120, 22);
+            this.txtQuantityInStock.Size = new System.Drawing.Size(143, 22);
             this.txtQuantityInStock.TabIndex = 100;
             this.txtQuantityInStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -468,11 +441,11 @@ namespace GroupAssignment
             // 
             this.lbVND.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbVND.AutoSize = true;
-            this.lbVND.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbVND.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbVND.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbVND.Location = new System.Drawing.Point(817, 221);
+            this.lbVND.Location = new System.Drawing.Point(803, 223);
             this.lbVND.Name = "lbVND";
-            this.lbVND.Size = new System.Drawing.Size(63, 22);
+            this.lbVND.Size = new System.Drawing.Size(56, 19);
             this.lbVND.TabIndex = 933;
             this.lbVND.Text = "(VND)";
             // 
@@ -485,7 +458,7 @@ namespace GroupAssignment
             this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(88, 46);
-            this.btnCheck.TabIndex = 9;
+            this.btnCheck.TabIndex = 10;
             this.btnCheck.Text = "CHECK";
             this.btnCheck.UseVisualStyleBackColor = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
@@ -497,7 +470,7 @@ namespace GroupAssignment
             this.txtFreight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFreight.Name = "txtFreight";
             this.txtFreight.Size = new System.Drawing.Size(153, 22);
-            this.txtFreight.TabIndex = 7;
+            this.txtFreight.TabIndex = 8;
             this.txtFreight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbFreight
@@ -522,15 +495,15 @@ namespace GroupAssignment
             this.cboCusGender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboCusGender.Name = "cboCusGender";
             this.cboCusGender.Size = new System.Drawing.Size(124, 23);
-            this.cboCusGender.TabIndex = 100;
+            this.cboCusGender.TabIndex = 3;
             // 
             // lbAddress
             // 
-            this.lbAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbAddress.AutoSize = true;
             this.lbAddress.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbAddress.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbAddress.Location = new System.Drawing.Point(635, 41);
+            this.lbAddress.Location = new System.Drawing.Point(329, 72);
             this.lbAddress.Name = "lbAddress";
             this.lbAddress.Size = new System.Drawing.Size(52, 15);
             this.lbAddress.TabIndex = 333;
@@ -554,21 +527,9 @@ namespace GroupAssignment
             this.lbCusName.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbCusName.Location = new System.Drawing.Point(12, 45);
             this.lbCusName.Name = "lbCusName";
-            this.lbCusName.Size = new System.Drawing.Size(95, 15);
+            this.lbCusName.Size = new System.Drawing.Size(93, 15);
             this.lbCusName.TabIndex = 1000;
-            this.lbCusName.Text = "Customer Name";
-            // 
-            // lbEmail
-            // 
-            this.lbEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbEmail.AutoSize = true;
-            this.lbEmail.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbEmail.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbEmail.Location = new System.Drawing.Point(329, 72);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(38, 15);
-            this.lbEmail.TabIndex = 333;
-            this.lbEmail.Text = "Email";
+            this.lbCusName.Text = "Customer name";
             // 
             // lbPhone
             // 
@@ -590,23 +551,14 @@ namespace GroupAssignment
             this.txtCusName.Size = new System.Drawing.Size(181, 22);
             this.txtCusName.TabIndex = 1;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtEmail.Location = new System.Drawing.Point(449, 69);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(143, 22);
-            this.txtEmail.TabIndex = 100;
-            // 
             // txtPhone
             // 
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPhone.Location = new System.Drawing.Point(449, 41);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(120, 22);
-            this.txtPhone.TabIndex = 100;
+            this.txtPhone.Size = new System.Drawing.Size(143, 22);
+            this.txtPhone.TabIndex = 2;
             // 
             // lbCusInfo
             // 
@@ -615,19 +567,19 @@ namespace GroupAssignment
             this.lbCusInfo.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbCusInfo.Location = new System.Drawing.Point(12, 9);
             this.lbCusInfo.Name = "lbCusInfo";
-            this.lbCusInfo.Size = new System.Drawing.Size(192, 22);
+            this.lbCusInfo.Size = new System.Drawing.Size(190, 22);
             this.lbCusInfo.TabIndex = 1000;
-            this.lbCusInfo.Text = "Customer Information";
+            this.lbCusInfo.Text = "Customer information";
             // 
             // txtAddress
             // 
-            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAddress.Location = new System.Drawing.Point(753, 38);
+            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAddress.Location = new System.Drawing.Point(449, 72);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(140, 53);
-            this.txtAddress.TabIndex = 100;
+            this.txtAddress.Size = new System.Drawing.Size(143, 53);
+            this.txtAddress.TabIndex = 4;
             // 
             // txtColor
             // 
@@ -652,20 +604,43 @@ namespace GroupAssignment
             this.lbColor.TabIndex = 333;
             this.lbColor.Text = "Color";
             // 
+            // PetID
+            // 
+            this.PetID.HeaderText = "Pet ID";
+            this.PetID.Name = "PetID";
+            // 
+            // PetName
+            // 
+            this.PetName.HeaderText = "Pet name";
+            this.PetName.Name = "PetName";
+            // 
+            // Gender
+            // 
+            this.Gender.HeaderText = "Gender";
+            this.Gender.Name = "Gender";
+            // 
+            // QuantityBuy
+            // 
+            this.QuantityBuy.HeaderText = "Quantity buy";
+            this.QuantityBuy.Name = "QuantityBuy";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Unit price (VND)";
+            this.Price.Name = "Price";
+            // 
             // frmBillDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(959, 543);
+            this.ClientSize = new System.Drawing.Size(959, 561);
             this.Controls.Add(this.lbCusInfo);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lbVND);
             this.Controls.Add(this.txtCusName);
             this.Controls.Add(this.lbPhone);
-            this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbCusName);
             this.Controls.Add(this.txtQuantityBuy);
             this.Controls.Add(this.lbCusGender);
@@ -706,7 +681,7 @@ namespace GroupAssignment
             this.Controls.Add(this.dgvCart);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimumSize = new System.Drawing.Size(975, 582);
+            this.MinimumSize = new System.Drawing.Size(975, 600);
             this.Name = "frmBillDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create bill";
@@ -757,10 +732,8 @@ namespace GroupAssignment
         private System.Windows.Forms.Label lbAddress;
         private System.Windows.Forms.Label lbCusGender;
         private System.Windows.Forms.Label lbCusName;
-        private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.TextBox txtCusName;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lbCusInfo;
         private System.Windows.Forms.TextBox txtAddress;
