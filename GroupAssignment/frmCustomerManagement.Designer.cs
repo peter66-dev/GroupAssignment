@@ -32,6 +32,14 @@ namespace WinformPetStore
         private void InitializeComponent()
         {
             this.dgvCustomerList = new System.Windows.Forms.DataGridView();
+            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AccumulatedPoint = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -56,14 +64,6 @@ namespace WinformPetStore
             this.btnSort = new System.Windows.Forms.Button();
             this.txtEmailSearch = new System.Windows.Forms.TextBox();
             this.lbSearch = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,20 +73,75 @@ namespace WinformPetStore
             this.dgvCustomerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCustomerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomerList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column5,
-            this.Column3,
-            this.Column6,
-            this.Column4,
-            this.Column7,
-            this.Column8});
+            this.CustomerID,
+            this.CustomerName,
+            this.Gender,
+            this.Email,
+            this.Phone,
+            this.Address,
+            this.AccumulatedPoint,
+            this.Status});
             this.dgvCustomerList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvCustomerList.Location = new System.Drawing.Point(0, 286);
             this.dgvCustomerList.Name = "dgvCustomerList";
             this.dgvCustomerList.RowTemplate.Height = 25;
             this.dgvCustomerList.Size = new System.Drawing.Size(1058, 338);
             this.dgvCustomerList.TabIndex = 999;
+            this.dgvCustomerList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomerList_CellClick);
+            // 
+            // CustomerID
+            // 
+            this.CustomerID.DataPropertyName = "CustomerID";
+            this.CustomerID.HeaderText = "Customer ID";
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.ReadOnly = true;
+            // 
+            // CustomerName
+            // 
+            this.CustomerName.DataPropertyName = "CustomerName";
+            this.CustomerName.HeaderText = "Customer Name";
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.ReadOnly = true;
+            // 
+            // Gender
+            // 
+            this.Gender.DataPropertyName = "Gender";
+            this.Gender.HeaderText = "Gender";
+            this.Gender.Name = "Gender";
+            this.Gender.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // Phone
+            // 
+            this.Phone.DataPropertyName = "Phone";
+            this.Phone.HeaderText = "Phone";
+            this.Phone.Name = "Phone";
+            this.Phone.ReadOnly = true;
+            // 
+            // Address
+            // 
+            this.Address.DataPropertyName = "Address";
+            this.Address.HeaderText = "Address";
+            this.Address.Name = "Address";
+            this.Address.ReadOnly = true;
+            // 
+            // AccumulatedPoint
+            // 
+            this.AccumulatedPoint.DataPropertyName = "AccumulatedPoint";
+            this.AccumulatedPoint.HeaderText = "Point";
+            this.AccumulatedPoint.Name = "AccumulatedPoint";
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
             // 
             // btnLoad
             // 
@@ -163,7 +218,7 @@ namespace WinformPetStore
             this.panel1.ForeColor = System.Drawing.Color.Gainsboro;
             this.panel1.Location = new System.Drawing.Point(15, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(809, 219);
+            this.panel1.Size = new System.Drawing.Size(900, 219);
             this.panel1.TabIndex = 999;
             // 
             // lbPhone
@@ -210,16 +265,19 @@ namespace WinformPetStore
             this.txtPhone.ReadOnly = true;
             this.txtPhone.Size = new System.Drawing.Size(202, 25);
             this.txtPhone.TabIndex = 999;
+            this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAddress
             // 
             this.txtAddress.Enabled = false;
             this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtAddress.Location = new System.Drawing.Point(550, 68);
+            this.txtAddress.Location = new System.Drawing.Point(550, 172);
+            this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ReadOnly = true;
-            this.txtAddress.Size = new System.Drawing.Size(202, 25);
+            this.txtAddress.Size = new System.Drawing.Size(202, 47);
             this.txtAddress.TabIndex = 999;
+            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtEmail
             // 
@@ -229,13 +287,14 @@ namespace WinformPetStore
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(202, 25);
             this.txtEmail.TabIndex = 999;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbAddress
             // 
             this.lbAddress.AutoSize = true;
             this.lbAddress.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbAddress.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbAddress.Location = new System.Drawing.Point(461, 70);
+            this.lbAddress.Location = new System.Drawing.Point(461, 174);
             this.lbAddress.Name = "lbAddress";
             this.lbAddress.Size = new System.Drawing.Size(52, 15);
             this.lbAddress.TabIndex = 999;
@@ -256,18 +315,19 @@ namespace WinformPetStore
             // 
             this.txtStatus.Enabled = false;
             this.txtStatus.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtStatus.Location = new System.Drawing.Point(550, 172);
+            this.txtStatus.Location = new System.Drawing.Point(550, 69);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(202, 25);
             this.txtStatus.TabIndex = 999;
+            this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbStatus
             // 
             this.lbStatus.AutoSize = true;
             this.lbStatus.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbStatus.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbStatus.Location = new System.Drawing.Point(461, 175);
+            this.lbStatus.Location = new System.Drawing.Point(461, 72);
             this.lbStatus.Name = "lbStatus";
             this.lbStatus.Size = new System.Drawing.Size(42, 15);
             this.lbStatus.TabIndex = 999;
@@ -282,6 +342,7 @@ namespace WinformPetStore
             this.txtPoint.ReadOnly = true;
             this.txtPoint.Size = new System.Drawing.Size(202, 25);
             this.txtPoint.TabIndex = 999;
+            this.txtPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbPoint
             // 
@@ -303,6 +364,7 @@ namespace WinformPetStore
             this.txtCusName.ReadOnly = true;
             this.txtCusName.Size = new System.Drawing.Size(202, 25);
             this.txtCusName.TabIndex = 999;
+            this.txtCusName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbCustomerName
             // 
@@ -324,6 +386,7 @@ namespace WinformPetStore
             this.txtCusID.ReadOnly = true;
             this.txtCusID.Size = new System.Drawing.Size(202, 25);
             this.txtCusID.TabIndex = 999;
+            this.txtCusID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbCustomerID
             // 
@@ -357,7 +420,7 @@ namespace WinformPetStore
             this.txtEmailSearch.Name = "txtEmailSearch";
             this.txtEmailSearch.PlaceholderText = "Input Email";
             this.txtEmailSearch.Size = new System.Drawing.Size(137, 25);
-            this.txtEmailSearch.TabIndex = 8;
+            this.txtEmailSearch.TabIndex = 6;
             this.txtEmailSearch.TextChanged += new System.EventHandler(this.txtEmailSearch_TextChanged);
             // 
             // lbSearch
@@ -371,60 +434,6 @@ namespace WinformPetStore
             this.lbSearch.Size = new System.Drawing.Size(67, 22);
             this.lbSearch.TabIndex = 1000;
             this.lbSearch.Text = "Search";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "CustomerID";
-            this.Column1.HeaderText = "Customer ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "CustomerName";
-            this.Column2.HeaderText = "Customer Name";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Gender";
-            this.Column5.HeaderText = "Gender";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Email";
-            this.Column3.HeaderText = "Email";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Phone";
-            this.Column6.HeaderText = "Phone";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Address";
-            this.Column4.HeaderText = "Address";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "AccumulatedPoint";
-            this.Column7.HeaderText = "Point";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "Status";
-            this.Column8.HeaderText = "Status";
-            this.Column8.Name = "Column8";
             // 
             // frmCustomerManagement
             // 
@@ -445,7 +454,7 @@ namespace WinformPetStore
             this.MinimumSize = new System.Drawing.Size(975, 600);
             this.Name = "frmCustomerManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Member Management";
+            this.Text = "Customer Management";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -489,5 +498,13 @@ namespace WinformPetStore
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn CustomerID;
+        private DataGridViewTextBoxColumn CustomerName;
+        private DataGridViewTextBoxColumn Gender;
+        private DataGridViewTextBoxColumn Email;
+        private DataGridViewTextBoxColumn Phone;
+        private DataGridViewTextBoxColumn Address;
+        private DataGridViewTextBoxColumn AccumulatedPoint;
+        private DataGridViewTextBoxColumn Status;
     }
 }

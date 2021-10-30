@@ -195,10 +195,5 @@ namespace GroupAssignment
                 e.Cancel = true;
             }
         }
-
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

@@ -68,7 +68,6 @@ namespace GroupAssignment
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 661);
             this.panelMenu.TabIndex = 999;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // btnStatistic
             // 
@@ -120,34 +119,6 @@ namespace GroupAssignment
             this.btnCreateBill.UseVisualStyleBackColor = false;
             this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
             // 
-<<<<<<< HEAD
-=======
-            // btnBills
-            // 
-            this.btnBills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
-            this.btnBills.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBills.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBills.FlatAppearance.BorderSize = 0;
-            this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBills.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBills.ForeColor = System.Drawing.Color.SandyBrown;
-            this.btnBills.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.btnBills.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnBills.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBills.IconSize = 32;
-            this.btnBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBills.Location = new System.Drawing.Point(0, 260);
-            this.btnBills.Name = "btnBills";
-            this.btnBills.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnBills.Size = new System.Drawing.Size(220, 60);
-            this.btnBills.TabIndex = 4;
-            this.btnBills.Text = "Bills";
-            this.btnBills.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBills.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBills.UseVisualStyleBackColor = false;
-            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
-            // 
->>>>>>> 83755e4e3314193dcf695a4d7cc23e15a23fc017
             // btnCustomers
             // 
             this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
@@ -330,7 +301,7 @@ namespace GroupAssignment
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTime.Location = new System.Drawing.Point(554, 312);
+            this.lbTime.Location = new System.Drawing.Point(496, 357);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(67, 19);
             this.lbTime.TabIndex = 4;
@@ -340,7 +311,7 @@ namespace GroupAssignment
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(489, 123);
+            this.pictureBox1.Location = new System.Drawing.Point(441, 175);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 153);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
