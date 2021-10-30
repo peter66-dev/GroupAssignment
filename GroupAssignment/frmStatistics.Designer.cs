@@ -49,11 +49,11 @@ namespace WinformPetStore
             // lbTotalPayment
             // 
             this.lbTotalPayment.AutoSize = true;
-            this.lbTotalPayment.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbTotalPayment.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbTotalPayment.Location = new System.Drawing.Point(12, 79);
+            this.lbTotalPayment.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbTotalPayment.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbTotalPayment.Location = new System.Drawing.Point(0, 74);
             this.lbTotalPayment.Name = "lbTotalPayment";
-            this.lbTotalPayment.Size = new System.Drawing.Size(82, 15);
+            this.lbTotalPayment.Size = new System.Drawing.Size(126, 22);
             this.lbTotalPayment.TabIndex = 1003;
             this.lbTotalPayment.Text = "Total payment";
             // 
@@ -87,11 +87,11 @@ namespace WinformPetStore
             // 
             this.lbStartDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbStartDate.AutoSize = true;
-            this.lbStartDate.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbStartDate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbStartDate.Location = new System.Drawing.Point(334, 21);
+            this.lbStartDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbStartDate.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbStartDate.Location = new System.Drawing.Point(322, 16);
             this.lbStartDate.Name = "lbStartDate";
-            this.lbStartDate.Size = new System.Drawing.Size(60, 15);
+            this.lbStartDate.Size = new System.Drawing.Size(91, 22);
             this.lbStartDate.TabIndex = 1023;
             this.lbStartDate.Text = "Start date";
             // 
@@ -107,11 +107,11 @@ namespace WinformPetStore
             // 
             this.lbEndDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbEndDate.AutoSize = true;
-            this.lbEndDate.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbEndDate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbEndDate.Location = new System.Drawing.Point(334, 79);
+            this.lbEndDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbEndDate.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbEndDate.Location = new System.Drawing.Point(322, 74);
             this.lbEndDate.Name = "lbEndDate";
-            this.lbEndDate.Size = new System.Drawing.Size(52, 15);
+            this.lbEndDate.Size = new System.Drawing.Size(83, 22);
             this.lbEndDate.TabIndex = 1025;
             this.lbEndDate.Text = "End date";
             // 
@@ -126,7 +126,7 @@ namespace WinformPetStore
             // btnSearch
             // 
             this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSearch.BackColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Location = new System.Drawing.Point(418, 115);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -140,11 +140,11 @@ namespace WinformPetStore
             // lbTotalMoney
             // 
             this.lbTotalMoney.AutoSize = true;
-            this.lbTotalMoney.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbTotalMoney.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbTotalMoney.Location = new System.Drawing.Point(12, 21);
+            this.lbTotalMoney.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbTotalMoney.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbTotalMoney.Location = new System.Drawing.Point(5, 18);
             this.lbTotalMoney.Name = "lbTotalMoney";
-            this.lbTotalMoney.Size = new System.Drawing.Size(72, 15);
+            this.lbTotalMoney.Size = new System.Drawing.Size(110, 22);
             this.lbTotalMoney.TabIndex = 1028;
             this.lbTotalMoney.Text = "Total money";
             // 
@@ -161,11 +161,11 @@ namespace WinformPetStore
             // lbIncome
             // 
             this.lbIncome.AutoSize = true;
-            this.lbIncome.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbIncome.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbIncome.Location = new System.Drawing.Point(12, 139);
+            this.lbIncome.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbIncome.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbIncome.Location = new System.Drawing.Point(0, 134);
             this.lbIncome.Name = "lbIncome";
-            this.lbIncome.Size = new System.Drawing.Size(76, 15);
+            this.lbIncome.Size = new System.Drawing.Size(115, 22);
             this.lbIncome.TabIndex = 1030;
             this.lbIncome.Text = "Total income";
             // 
@@ -182,7 +182,7 @@ namespace WinformPetStore
             // btnSort
             // 
             this.btnSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSort.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnSort.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSort.Location = new System.Drawing.Point(832, 115);
             this.btnSort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -196,11 +196,11 @@ namespace WinformPetStore
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(297, 139);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.SandyBrown;
+            this.label1.Location = new System.Drawing.Point(297, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.Size = new System.Drawing.Size(61, 21);
             this.label1.TabIndex = 1033;
             this.label1.Text = "(VND)";
             // 
@@ -208,7 +208,7 @@ namespace WinformPetStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(959, 561);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSort);

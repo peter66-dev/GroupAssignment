@@ -30,6 +30,11 @@ namespace GroupAssignment
         private void InitializeComponent()
         {
             this.dgvCart = new System.Windows.Forms.DataGridView();
+            this.PetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuantityBuy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbPetInfo = new System.Windows.Forms.Label();
             this.txtPetID = new System.Windows.Forms.TextBox();
             this.lbPetID = new System.Windows.Forms.Label();
@@ -73,11 +78,6 @@ namespace GroupAssignment
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.lbColor = new System.Windows.Forms.Label();
-            this.PetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantityBuy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantityBuy)).BeginInit();
             this.SuspendLayout();
@@ -104,11 +104,36 @@ namespace GroupAssignment
             this.dgvCart.Size = new System.Drawing.Size(580, 289);
             this.dgvCart.TabIndex = 100;
             // 
+            // PetID
+            // 
+            this.PetID.HeaderText = "Pet ID";
+            this.PetID.Name = "PetID";
+            // 
+            // PetName
+            // 
+            this.PetName.HeaderText = "Pet name";
+            this.PetName.Name = "PetName";
+            // 
+            // Gender
+            // 
+            this.Gender.HeaderText = "Gender";
+            this.Gender.Name = "Gender";
+            // 
+            // QuantityBuy
+            // 
+            this.QuantityBuy.HeaderText = "Quantity buy";
+            this.QuantityBuy.Name = "QuantityBuy";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Unit price (VND)";
+            this.Price.Name = "Price";
+            // 
             // lbPetInfo
             // 
             this.lbPetInfo.AutoSize = true;
             this.lbPetInfo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPetInfo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPetInfo.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPetInfo.Location = new System.Drawing.Point(12, 111);
             this.lbPetInfo.Name = "lbPetInfo";
             this.lbPetInfo.Size = new System.Drawing.Size(137, 22);
@@ -129,7 +154,7 @@ namespace GroupAssignment
             // 
             this.lbPetID.AutoSize = true;
             this.lbPetID.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPetID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPetID.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPetID.Location = new System.Drawing.Point(12, 151);
             this.lbPetID.Name = "lbPetID";
             this.lbPetID.Size = new System.Drawing.Size(41, 15);
@@ -150,7 +175,7 @@ namespace GroupAssignment
             // 
             this.lbAge.AutoSize = true;
             this.lbAge.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbAge.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbAge.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbAge.Location = new System.Drawing.Point(12, 180);
             this.lbAge.Name = "lbAge";
             this.lbAge.Size = new System.Drawing.Size(29, 15);
@@ -173,7 +198,7 @@ namespace GroupAssignment
             this.lbPetName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbPetName.AutoSize = true;
             this.lbPetName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPetName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPetName.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPetName.Location = new System.Drawing.Point(329, 151);
             this.lbPetName.Name = "lbPetName";
             this.lbPetName.Size = new System.Drawing.Size(57, 15);
@@ -196,7 +221,7 @@ namespace GroupAssignment
             this.lbUnitPrice.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbUnitPrice.AutoSize = true;
             this.lbUnitPrice.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbUnitPrice.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbUnitPrice.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbUnitPrice.Location = new System.Drawing.Point(329, 180);
             this.lbUnitPrice.Name = "lbUnitPrice";
             this.lbUnitPrice.Size = new System.Drawing.Size(61, 15);
@@ -217,7 +242,7 @@ namespace GroupAssignment
             // 
             this.lbPetGender.AutoSize = true;
             this.lbPetGender.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPetGender.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPetGender.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPetGender.Location = new System.Drawing.Point(12, 207);
             this.lbPetGender.Name = "lbPetGender";
             this.lbPetGender.Size = new System.Drawing.Size(47, 15);
@@ -229,7 +254,7 @@ namespace GroupAssignment
             this.lbQuantityBuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbQuantityBuy.AutoSize = true;
             this.lbQuantityBuy.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbQuantityBuy.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbQuantityBuy.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbQuantityBuy.Location = new System.Drawing.Point(633, 184);
             this.lbQuantityBuy.Name = "lbQuantityBuy";
             this.lbQuantityBuy.Size = new System.Drawing.Size(77, 15);
@@ -239,8 +264,9 @@ namespace GroupAssignment
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAdd.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(754, 38);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
@@ -253,8 +279,9 @@ namespace GroupAssignment
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.DarkGray;
+            this.btnSave.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(754, 486);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
@@ -269,7 +296,7 @@ namespace GroupAssignment
             this.lbCalculation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbCalculation.AutoSize = true;
             this.lbCalculation.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCalculation.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCalculation.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbCalculation.Location = new System.Drawing.Point(635, 221);
             this.lbCalculation.Name = "lbCalculation";
             this.lbCalculation.Size = new System.Drawing.Size(162, 22);
@@ -292,7 +319,7 @@ namespace GroupAssignment
             this.lbSubTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbSubTotal.AutoSize = true;
             this.lbSubTotal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbSubTotal.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbSubTotal.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbSubTotal.Location = new System.Drawing.Point(635, 261);
             this.lbSubTotal.Name = "lbSubTotal";
             this.lbSubTotal.Size = new System.Drawing.Size(55, 15);
@@ -314,7 +341,7 @@ namespace GroupAssignment
             this.lbDiscount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbDiscount.AutoSize = true;
             this.lbDiscount.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbDiscount.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbDiscount.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbDiscount.Location = new System.Drawing.Point(635, 296);
             this.lbDiscount.Name = "lbDiscount";
             this.lbDiscount.Size = new System.Drawing.Size(56, 15);
@@ -337,7 +364,7 @@ namespace GroupAssignment
             this.lbGrandTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbGrandTotal.AutoSize = true;
             this.lbGrandTotal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbGrandTotal.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbGrandTotal.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbGrandTotal.Location = new System.Drawing.Point(635, 336);
             this.lbGrandTotal.Name = "lbGrandTotal";
             this.lbGrandTotal.Size = new System.Drawing.Size(68, 15);
@@ -359,7 +386,7 @@ namespace GroupAssignment
             this.lbPaidAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbPaidAmount.AutoSize = true;
             this.lbPaidAmount.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPaidAmount.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPaidAmount.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPaidAmount.Location = new System.Drawing.Point(635, 410);
             this.lbPaidAmount.Name = "lbPaidAmount";
             this.lbPaidAmount.Size = new System.Drawing.Size(74, 15);
@@ -382,7 +409,7 @@ namespace GroupAssignment
             this.lbReturnAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbReturnAmount.AutoSize = true;
             this.lbReturnAmount.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbReturnAmount.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbReturnAmount.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbReturnAmount.Location = new System.Drawing.Point(635, 444);
             this.lbReturnAmount.Name = "lbReturnAmount";
             this.lbReturnAmount.Size = new System.Drawing.Size(89, 15);
@@ -394,7 +421,7 @@ namespace GroupAssignment
             this.lbQuantityInStock.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbQuantityInStock.AutoSize = true;
             this.lbQuantityInStock.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbQuantityInStock.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbQuantityInStock.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbQuantityInStock.Location = new System.Drawing.Point(329, 211);
             this.lbQuantityInStock.Name = "lbQuantityInStock";
             this.lbQuantityInStock.Size = new System.Drawing.Size(102, 15);
@@ -442,7 +469,7 @@ namespace GroupAssignment
             this.lbVND.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbVND.AutoSize = true;
             this.lbVND.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbVND.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbVND.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbVND.Location = new System.Drawing.Point(803, 223);
             this.lbVND.Name = "lbVND";
             this.lbVND.Size = new System.Drawing.Size(56, 19);
@@ -452,8 +479,9 @@ namespace GroupAssignment
             // btnCheck
             // 
             this.btnCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCheck.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnCheck.BackColor = System.Drawing.Color.SandyBrown;
             this.btnCheck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCheck.ForeColor = System.Drawing.Color.White;
             this.btnCheck.Location = new System.Drawing.Point(635, 486);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCheck.Name = "btnCheck";
@@ -478,7 +506,7 @@ namespace GroupAssignment
             this.lbFreight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbFreight.AutoSize = true;
             this.lbFreight.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbFreight.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbFreight.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbFreight.Location = new System.Drawing.Point(635, 373);
             this.lbFreight.Name = "lbFreight";
             this.lbFreight.Size = new System.Drawing.Size(48, 15);
@@ -502,7 +530,7 @@ namespace GroupAssignment
             this.lbAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbAddress.AutoSize = true;
             this.lbAddress.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbAddress.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbAddress.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbAddress.Location = new System.Drawing.Point(329, 72);
             this.lbAddress.Name = "lbAddress";
             this.lbAddress.Size = new System.Drawing.Size(52, 15);
@@ -513,7 +541,7 @@ namespace GroupAssignment
             // 
             this.lbCusGender.AutoSize = true;
             this.lbCusGender.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCusGender.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCusGender.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbCusGender.Location = new System.Drawing.Point(12, 72);
             this.lbCusGender.Name = "lbCusGender";
             this.lbCusGender.Size = new System.Drawing.Size(47, 15);
@@ -524,7 +552,7 @@ namespace GroupAssignment
             // 
             this.lbCusName.AutoSize = true;
             this.lbCusName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCusName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCusName.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbCusName.Location = new System.Drawing.Point(12, 45);
             this.lbCusName.Name = "lbCusName";
             this.lbCusName.Size = new System.Drawing.Size(93, 15);
@@ -536,7 +564,7 @@ namespace GroupAssignment
             this.lbPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbPhone.AutoSize = true;
             this.lbPhone.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPhone.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPhone.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPhone.Location = new System.Drawing.Point(329, 45);
             this.lbPhone.Name = "lbPhone";
             this.lbPhone.Size = new System.Drawing.Size(41, 15);
@@ -563,11 +591,11 @@ namespace GroupAssignment
             // lbCusInfo
             // 
             this.lbCusInfo.AutoSize = true;
-            this.lbCusInfo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCusInfo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCusInfo.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCusInfo.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbCusInfo.Location = new System.Drawing.Point(12, 9);
             this.lbCusInfo.Name = "lbCusInfo";
-            this.lbCusInfo.Size = new System.Drawing.Size(190, 22);
+            this.lbCusInfo.Size = new System.Drawing.Size(239, 26);
             this.lbCusInfo.TabIndex = 1000;
             this.lbCusInfo.Text = "Customer information";
             // 
@@ -597,43 +625,18 @@ namespace GroupAssignment
             this.lbColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbColor.AutoSize = true;
             this.lbColor.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbColor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbColor.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbColor.Location = new System.Drawing.Point(635, 154);
             this.lbColor.Name = "lbColor";
             this.lbColor.Size = new System.Drawing.Size(38, 15);
             this.lbColor.TabIndex = 333;
             this.lbColor.Text = "Color";
             // 
-            // PetID
-            // 
-            this.PetID.HeaderText = "Pet ID";
-            this.PetID.Name = "PetID";
-            // 
-            // PetName
-            // 
-            this.PetName.HeaderText = "Pet name";
-            this.PetName.Name = "PetName";
-            // 
-            // Gender
-            // 
-            this.Gender.HeaderText = "Gender";
-            this.Gender.Name = "Gender";
-            // 
-            // QuantityBuy
-            // 
-            this.QuantityBuy.HeaderText = "Quantity buy";
-            this.QuantityBuy.Name = "QuantityBuy";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Unit price (VND)";
-            this.Price.Name = "Price";
-            // 
             // frmBillDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(959, 561);
             this.Controls.Add(this.lbCusInfo);
             this.Controls.Add(this.txtAddress);
@@ -680,6 +683,7 @@ namespace GroupAssignment
             this.Controls.Add(this.lbPetInfo);
             this.Controls.Add(this.dgvCart);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.SandyBrown;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MinimumSize = new System.Drawing.Size(975, 600);
             this.Name = "frmBillDetails";
