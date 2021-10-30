@@ -119,7 +119,8 @@ namespace GroupAssignment
             this.btnCreateBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCreateBill.UseVisualStyleBackColor = false;
             this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
-          
+            // thay o day k
+            //vi du o day co Head(Incoming Change) chon cai nao thi nhan code cai do
             // btnCustomers
             // 
             this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
