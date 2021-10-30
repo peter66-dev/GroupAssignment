@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z27XSrdO08ZgHae5VGjjHki7rlFlzUTNIYfxjx5zGHOn9CE4p7G88JVS5awal5FRhO1oORHeJmRM7d0iyzP8wg==",
+  "dgSpecHash": "on4zOMR/rlALDh4nj/+Fq7HlpqjFUI5L8EITKeMPT986EsP0BRO+GQ7j5afcf7OcIgx+u50JB7vVpqMbcCS7OQ==",
   "success": true,
   "projectFilePath": "E:\\C#\\repos\\GroupAssignment\\GroupAssignment\\WinformPetStore.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\3.0.0\\microsoft.data.sqlclient.sni.runtime.3.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\5.0.0\\microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration.json\\5.0.0\\microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",

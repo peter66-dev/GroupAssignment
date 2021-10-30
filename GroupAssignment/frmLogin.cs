@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GroupAssignment;
+using Microsoft.Extensions.Configuration;
 
-namespace GroupAssignment
+namespace WinformPetStore
 {
     public partial class frmLogin : Form
     {
@@ -17,14 +19,59 @@ namespace GroupAssignment
             InitializeComponent();
         }
 
-        private void frmBillDetails_Load(object sender, EventArgs e)
+        public bool isLogin { private set; get; }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 0;
+
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void cbShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            Close();
+            txtPassword.PasswordChar = cbShowPassword.Checked ? '\0' : '*';
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text;
+            string password = txtPassword.Text;
+
+            var admin = Program.Configuration.GetSection("AdminAccount").Get<DefaultAccountSettings>();
+            string adminEmail = admin.username;
+            string adminPassword = admin.password;
+
+            if(adminEmail.Equals(email) && adminPassword.Equals(password))
+            {
+                isLogin = true;
+            }
+            else
+            {
+                txtEmail.Text = String.Empty;
+                txtPassword.Text = String.Empty;
+                MessageBox.Show("Wrong username and password. Please try again!!!", "Warning");
+            }
+        }
+
+    }
+
+    public class DefaultAccountSettings
+    {
+        public string username { get; set; }
+        public string password { get; set; }
     }
 }

@@ -134,54 +134,62 @@ namespace GroupAssignment
             // btnLoad
             // 
             this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLoad.BackColor = System.Drawing.Color.SandyBrown;
             this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLoad.ForeColor = System.Drawing.Color.White;
             this.btnLoad.Location = new System.Drawing.Point(886, 12);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(86, 30);
             this.btnLoad.TabIndex = 1;
             this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.UseVisualStyleBackColor = false;
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(886, 55);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(86, 30);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.BackColor = System.Drawing.Color.SandyBrown;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(886, 100);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(86, 30);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.SandyBrown;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(886, 144);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 30);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.SandyBrown;
             this.panel1.Controls.Add(this.txtRequiredDate);
             this.panel1.Controls.Add(this.lbRequiredDate);
             this.panel1.Controls.Add(this.txtOrderDate);
@@ -211,10 +219,11 @@ namespace GroupAssignment
             // lbRequiredDate
             // 
             this.lbRequiredDate.AutoSize = true;
-            this.lbRequiredDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbRequiredDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbRequiredDate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbRequiredDate.Location = new System.Drawing.Point(420, 69);
             this.lbRequiredDate.Name = "lbRequiredDate";
-            this.lbRequiredDate.Size = new System.Drawing.Size(108, 19);
+            this.lbRequiredDate.Size = new System.Drawing.Size(129, 22);
             this.lbRequiredDate.TabIndex = 222;
             this.lbRequiredDate.Text = "Required Date";
             // 
@@ -232,10 +241,12 @@ namespace GroupAssignment
             // lbOrderDate
             // 
             this.lbOrderDate.AutoSize = true;
-            this.lbOrderDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbOrderDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbOrderDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbOrderDate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbOrderDate.Location = new System.Drawing.Point(420, 20);
             this.lbOrderDate.Name = "lbOrderDate";
-            this.lbOrderDate.Size = new System.Drawing.Size(86, 19);
+            this.lbOrderDate.Size = new System.Drawing.Size(104, 22);
             this.lbOrderDate.TabIndex = 333;
             this.lbOrderDate.Text = "Order Date";
             // 
@@ -253,10 +264,11 @@ namespace GroupAssignment
             // lbOrderID
             // 
             this.lbOrderID.AutoSize = true;
-            this.lbOrderID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbOrderID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbOrderID.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbOrderID.Location = new System.Drawing.Point(24, 20);
             this.lbOrderID.Name = "lbOrderID";
-            this.lbOrderID.Size = new System.Drawing.Size(71, 19);
+            this.lbOrderID.Size = new System.Drawing.Size(86, 22);
             this.lbOrderID.TabIndex = 444;
             this.lbOrderID.Text = "Order ID";
             // 
@@ -274,48 +286,55 @@ namespace GroupAssignment
             // lbMemberID
             // 
             this.lbMemberID.AutoSize = true;
-            this.lbMemberID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbMemberID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbMemberID.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbMemberID.Location = new System.Drawing.Point(24, 69);
             this.lbMemberID.Name = "lbMemberID";
-            this.lbMemberID.Size = new System.Drawing.Size(89, 19);
+            this.lbMemberID.Size = new System.Drawing.Size(105, 22);
             this.lbMemberID.TabIndex = 444;
             this.lbMemberID.Text = "Member ID";
             // 
             // btnStatistic
             // 
             this.btnStatistic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStatistic.BackColor = System.Drawing.Color.SandyBrown;
             this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStatistic.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnStatistic.ForeColor = System.Drawing.Color.White;
             this.btnStatistic.Location = new System.Drawing.Point(432, 250);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Size = new System.Drawing.Size(86, 30);
             this.btnStatistic.TabIndex = 10;
             this.btnStatistic.Text = "Statistic";
-            this.btnStatistic.UseVisualStyleBackColor = true;
+            this.btnStatistic.UseVisualStyleBackColor = false;
             // 
             // btnAscSort
             // 
             this.btnAscSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAscSort.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAscSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAscSort.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAscSort.ForeColor = System.Drawing.Color.White;
             this.btnAscSort.Location = new System.Drawing.Point(781, 215);
             this.btnAscSort.Name = "btnAscSort";
             this.btnAscSort.Size = new System.Drawing.Size(191, 30);
             this.btnAscSort.TabIndex = 5;
             this.btnAscSort.Text = "Sort Total Ascending";
-            this.btnAscSort.UseVisualStyleBackColor = true;
+            this.btnAscSort.UseVisualStyleBackColor = false;
             // 
             // btnDescSort
             // 
             this.btnDescSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDescSort.BackColor = System.Drawing.Color.SandyBrown;
             this.btnDescSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDescSort.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDescSort.ForeColor = System.Drawing.Color.White;
             this.btnDescSort.Location = new System.Drawing.Point(781, 253);
             this.btnDescSort.Name = "btnDescSort";
             this.btnDescSort.Size = new System.Drawing.Size(191, 30);
             this.btnDescSort.TabIndex = 6;
             this.btnDescSort.Text = "Sort Total Descending";
-            this.btnDescSort.UseVisualStyleBackColor = true;
+            this.btnDescSort.UseVisualStyleBackColor = false;
             // 
             // txtTotalStatistic
             // 
@@ -333,7 +352,7 @@ namespace GroupAssignment
             this.lbStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbStart.AutoSize = true;
             this.lbStart.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbStart.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbStart.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbStart.Location = new System.Drawing.Point(12, 221);
             this.lbStart.Name = "lbStart";
             this.lbStart.Size = new System.Drawing.Size(79, 19);
@@ -345,7 +364,7 @@ namespace GroupAssignment
             this.lbEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbEnd.AutoSize = true;
             this.lbEnd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbEnd.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbEnd.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbEnd.Location = new System.Drawing.Point(138, 221);
             this.lbEnd.Name = "lbEnd";
             this.lbEnd.Size = new System.Drawing.Size(72, 19);
@@ -375,7 +394,7 @@ namespace GroupAssignment
             this.lbMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbMoney.AutoSize = true;
             this.lbMoney.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbMoney.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbMoney.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbMoney.Location = new System.Drawing.Point(272, 221);
             this.lbMoney.Name = "lbMoney";
             this.lbMoney.Size = new System.Drawing.Size(106, 19);
@@ -386,7 +405,7 @@ namespace GroupAssignment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.lbMoney);
             this.Controls.Add(this.lbEnd);

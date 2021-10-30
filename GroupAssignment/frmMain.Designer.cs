@@ -29,6 +29,7 @@ namespace GroupAssignment
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnStatistic = new FontAwesome.Sharp.IconButton();
             this.btnCreateBill = new FontAwesome.Sharp.IconButton();
@@ -56,7 +57,7 @@ namespace GroupAssignment
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.panelMenu.Controls.Add(this.btnStatistic);
             this.panelMenu.Controls.Add(this.btnCreateBill);
             this.panelMenu.Controls.Add(this.btnCustomers);
@@ -67,14 +68,17 @@ namespace GroupAssignment
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 661);
             this.panelMenu.TabIndex = 999;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // btnStatistic
             // 
+            this.btnStatistic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStatistic.FlatAppearance.BorderSize = 0;
             this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistic.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnStatistic.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStatistic.ForeColor = System.Drawing.Color.SandyBrown;
             this.btnStatistic.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
             this.btnStatistic.IconColor = System.Drawing.Color.Gainsboro;
             this.btnStatistic.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -88,16 +92,18 @@ namespace GroupAssignment
             this.btnStatistic.Text = "Statistic";
             this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStatistic.UseVisualStyleBackColor = true;
+            this.btnStatistic.UseVisualStyleBackColor = false;
             this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // btnCreateBill
             // 
+            this.btnCreateBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.btnCreateBill.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreateBill.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCreateBill.FlatAppearance.BorderSize = 0;
             this.btnCreateBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreateBill.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCreateBill.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCreateBill.ForeColor = System.Drawing.Color.SandyBrown;
             this.btnCreateBill.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
             this.btnCreateBill.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCreateBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -111,16 +117,46 @@ namespace GroupAssignment
             this.btnCreateBill.Text = "Create bill";
             this.btnCreateBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCreateBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCreateBill.UseVisualStyleBackColor = true;
+            this.btnCreateBill.UseVisualStyleBackColor = false;
             this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
             // 
+<<<<<<< HEAD
+=======
+            // btnBills
+            // 
+            this.btnBills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
+            this.btnBills.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBills.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBills.FlatAppearance.BorderSize = 0;
+            this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBills.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBills.ForeColor = System.Drawing.Color.SandyBrown;
+            this.btnBills.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.btnBills.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnBills.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBills.IconSize = 32;
+            this.btnBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBills.Location = new System.Drawing.Point(0, 260);
+            this.btnBills.Name = "btnBills";
+            this.btnBills.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnBills.Size = new System.Drawing.Size(220, 60);
+            this.btnBills.TabIndex = 4;
+            this.btnBills.Text = "Bills";
+            this.btnBills.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBills.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBills.UseVisualStyleBackColor = false;
+            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
+            // 
+>>>>>>> 83755e4e3314193dcf695a4d7cc23e15a23fc017
             // btnCustomers
             // 
+            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.btnCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCustomers.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCustomers.FlatAppearance.BorderSize = 0;
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustomers.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCustomers.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCustomers.ForeColor = System.Drawing.Color.SandyBrown;
             this.btnCustomers.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
             this.btnCustomers.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCustomers.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -134,16 +170,18 @@ namespace GroupAssignment
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustomers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.UseVisualStyleBackColor = false;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // btnPets
             // 
+            this.btnPets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.btnPets.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPets.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPets.FlatAppearance.BorderSize = 0;
             this.btnPets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPets.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPets.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPets.ForeColor = System.Drawing.Color.SandyBrown;
             this.btnPets.IconChar = FontAwesome.Sharp.IconChar.Dog;
             this.btnPets.IconColor = System.Drawing.Color.Gainsboro;
             this.btnPets.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -157,11 +195,12 @@ namespace GroupAssignment
             this.btnPets.Text = "Pets";
             this.btnPets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPets.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPets.UseVisualStyleBackColor = true;
+            this.btnPets.UseVisualStyleBackColor = false;
             this.btnPets.Click += new System.EventHandler(this.btnPets_Click);
             // 
             // panelLogo
             // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -172,7 +211,7 @@ namespace GroupAssignment
             // btnHome
             // 
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.Image = global::WinformPetStore.Properties.Resources.logo;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.Location = new System.Drawing.Point(51, 25);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(112, 90);
@@ -183,7 +222,7 @@ namespace GroupAssignment
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.panelTitleBar.Controls.Add(this.btnClose);
             this.panelTitleBar.Controls.Add(this.btnMinimize);
             this.panelTitleBar.Controls.Add(this.btnMaximize);
@@ -199,6 +238,7 @@ namespace GroupAssignment
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.ForeColor = System.Drawing.Color.SandyBrown;
             this.btnClose.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -213,8 +253,10 @@ namespace GroupAssignment
             // btnMinimize
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMinimize.ForeColor = System.Drawing.Color.SandyBrown;
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnMinimize.IconColor = System.Drawing.Color.Black;
+            this.btnMinimize.IconColor = System.Drawing.Color.SandyBrown;
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.Location = new System.Drawing.Point(962, 3);
             this.btnMinimize.Name = "btnMinimize";
@@ -227,6 +269,7 @@ namespace GroupAssignment
             // btnMaximize
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.ForeColor = System.Drawing.Color.SandyBrown;
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaximize.IconColor = System.Drawing.Color.Black;
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -241,17 +284,18 @@ namespace GroupAssignment
             // lbTitleChildForm
             // 
             this.lbTitleChildForm.AutoSize = true;
-            this.lbTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbTitleChildForm.Location = new System.Drawing.Point(54, 31);
+            this.lbTitleChildForm.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTitleChildForm.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbTitleChildForm.Location = new System.Drawing.Point(54, 25);
             this.lbTitleChildForm.Name = "lbTitleChildForm";
-            this.lbTitleChildForm.Size = new System.Drawing.Size(40, 15);
+            this.lbTitleChildForm.Size = new System.Drawing.Size(70, 27);
             this.lbTitleChildForm.TabIndex = 888;
             this.lbTitleChildForm.Text = "Home";
             // 
             // iconCurrentChildForm
             // 
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.SandyBrown;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm.IconSize = 32;
             this.iconCurrentChildForm.Location = new System.Drawing.Point(16, 22);
@@ -262,7 +306,7 @@ namespace GroupAssignment
             // 
             // panelShadow
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(164)))), ((int)(((byte)(90)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
@@ -271,7 +315,7 @@ namespace GroupAssignment
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(142)))), ((int)(((byte)(95)))));
             this.panelDesktop.Controls.Add(this.lbTime);
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -295,7 +339,7 @@ namespace GroupAssignment
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::WinformPetStore.Properties.Resources.logo;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(489, 123);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 153);
