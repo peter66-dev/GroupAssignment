@@ -119,35 +119,7 @@ namespace GroupAssignment
             this.btnCreateBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCreateBill.UseVisualStyleBackColor = false;
             this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
-            // 
-<<<<<<< HEAD
-=======
-            // btnBills
-            // 
-            this.btnBills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
-            this.btnBills.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBills.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBills.FlatAppearance.BorderSize = 0;
-            this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBills.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBills.ForeColor = System.Drawing.Color.SandyBrown;
-            this.btnBills.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.btnBills.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnBills.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBills.IconSize = 32;
-            this.btnBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBills.Location = new System.Drawing.Point(0, 260);
-            this.btnBills.Name = "btnBills";
-            this.btnBills.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnBills.Size = new System.Drawing.Size(220, 60);
-            this.btnBills.TabIndex = 4;
-            this.btnBills.Text = "Bills";
-            this.btnBills.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBills.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBills.UseVisualStyleBackColor = false;
-            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
-            // 
->>>>>>> 83755e4e3314193dcf695a4d7cc23e15a23fc017
+          
             // btnCustomers
             // 
             this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
