@@ -32,7 +32,6 @@ namespace GroupAssignment
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnStatistic = new FontAwesome.Sharp.IconButton();
             this.btnCreateBill = new FontAwesome.Sharp.IconButton();
-            this.btnBills = new FontAwesome.Sharp.IconButton();
             this.btnCustomers = new FontAwesome.Sharp.IconButton();
             this.btnPets = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -60,7 +59,6 @@ namespace GroupAssignment
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelMenu.Controls.Add(this.btnStatistic);
             this.panelMenu.Controls.Add(this.btnCreateBill);
-            this.panelMenu.Controls.Add(this.btnBills);
             this.panelMenu.Controls.Add(this.btnCustomers);
             this.panelMenu.Controls.Add(this.btnPets);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -82,7 +80,7 @@ namespace GroupAssignment
             this.btnStatistic.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnStatistic.IconSize = 32;
             this.btnStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatistic.Location = new System.Drawing.Point(0, 380);
+            this.btnStatistic.Location = new System.Drawing.Point(0, 320);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnStatistic.Size = new System.Drawing.Size(220, 60);
@@ -105,7 +103,7 @@ namespace GroupAssignment
             this.btnCreateBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCreateBill.IconSize = 32;
             this.btnCreateBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCreateBill.Location = new System.Drawing.Point(0, 320);
+            this.btnCreateBill.Location = new System.Drawing.Point(0, 260);
             this.btnCreateBill.Name = "btnCreateBill";
             this.btnCreateBill.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCreateBill.Size = new System.Drawing.Size(220, 60);
@@ -115,29 +113,6 @@ namespace GroupAssignment
             this.btnCreateBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCreateBill.UseVisualStyleBackColor = true;
             this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
-            // 
-            // btnBills
-            // 
-            this.btnBills.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBills.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBills.FlatAppearance.BorderSize = 0;
-            this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBills.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBills.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.btnBills.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnBills.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBills.IconSize = 32;
-            this.btnBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBills.Location = new System.Drawing.Point(0, 260);
-            this.btnBills.Name = "btnBills";
-            this.btnBills.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnBills.Size = new System.Drawing.Size(220, 60);
-            this.btnBills.TabIndex = 4;
-            this.btnBills.Text = "Bills";
-            this.btnBills.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBills.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBills.UseVisualStyleBackColor = true;
-            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
             // 
             // btnCustomers
             // 
@@ -362,7 +337,6 @@ namespace GroupAssignment
         private System.Windows.Forms.Panel panelLogo;
         private FontAwesome.Sharp.IconButton btnStatistic;
         private FontAwesome.Sharp.IconButton btnCreateBill;
-        private FontAwesome.Sharp.IconButton btnBills;
         private FontAwesome.Sharp.IconButton btnCustomers;
         private System.Windows.Forms.Panel panelTitleBar;
         private FontAwesome.Sharp.IconButton iconCurrentChildForm;

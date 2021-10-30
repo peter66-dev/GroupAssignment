@@ -135,6 +135,7 @@ namespace GroupAssignment
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new frmCustomerManagement());
         }
         private void btnBills_Click(object sender, EventArgs e)
         {
