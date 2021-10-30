@@ -192,11 +192,12 @@ namespace DataAccess
             }
         }
 
-        public void UpdateCustomer(CustomerObject cus)//KHÔNG UPDATE PRODUCTID
+        public void UpdateCustomer(CustomerObject cus)//KHÔNG UPDATE CUSTOMERID
         {
             connection = new SqlConnection(GetConnectionString());
             command = new SqlCommand("Update tblCustomers set CustomerName = @CustomerName, Gender = @Gender, " +
-                "Email = @Email, Phone = @Phone, Address = @Address, AccumulatedPoint = @AccumulatedPoint, Status = @Status where CustomerID = @CustomerID", connection);
+                "Email = @Email, Phone = @Phone, [Address] = @Address, AccumulatedPoint = @AccumulatedPoint, " +
+                "Status = @Status where CustomerID = @CustomerID", connection);
             command.Parameters.AddWithValue("@CustomerID", cus.CustomerID);
             command.Parameters.AddWithValue("@CustomerName", cus.CustomerName);
             command.Parameters.AddWithValue("@Email", cus.Email);
@@ -315,13 +316,13 @@ namespace DataAccess
                 {
                     while (reader.Read())
                     {
-                        cus.CustomerID = reader.GetInt32("CustomerID");
+                        cus.CustomerID = cusID;
                         cus.CustomerName = reader.GetString("CustomerName");
                         cus.Gender = reader.GetBoolean("Gender");
                         cus.Email = reader.GetString("Email");
                         cus.Phone = reader.GetString("Phone");
-                        cus.Address = reader.GetString("UnitsInStock");
-                        cus.AccumulatedPoint = reader.GetInt32("UnitsInStock");
+                        cus.Address = reader.GetString("Address");
+                        cus.AccumulatedPoint = reader.GetInt32("AccumulatedPoint");
                         cus.Status = reader.GetBoolean("Status");
                     }
                 }
