@@ -47,7 +47,7 @@ namespace DataAccess
         {
             List<BillDetailObject> list = new List<BillDetailObject>();
             connection = new SqlConnection(GetConnectionString());
-            command = new SqlCommand("select BillDetailID, BillID, PetID, UserName, Gender, Address, " +
+            command = new SqlCommand("select BillDetailID, BillID, PetID, " +
                 "QuantityBuy, SubTotal, Discount from tblBillDetails", connection);
             try
             {
@@ -62,9 +62,6 @@ namespace DataAccess
                             BillDetailID = rs.GetInt32("BillDetailID"),
                             BillID = rs.GetInt32("BillID"),
                             PetID = rs.GetInt32("PetID"),
-                            UserName = rs.GetString("UserName"),
-                            Gender = rs.GetBoolean("Gender"),
-                            Address = rs.GetString("Address"),
                             QuantityBuy = rs.GetInt32("QuantityBuy"),
                             SubTotal = rs.GetDecimal("SubTotal"),
                             Discount = rs.GetDouble("Discount")
@@ -87,14 +84,10 @@ namespace DataAccess
         public void InsertBillDetail(BillDetailObject bill)
         {
             connection = new SqlConnection(GetConnectionString());
-            command = new SqlCommand("insert into tblBillDetails(BillID, PetID, UserName, Gender, Address,  Phone,  QuantityBuy,  SubTotal,  Discount) " +
-                "values(@BillID, @PetID, @UserName, @Gender, @Address, @Phone, @QuantityBuy, @SubTotal, @Discount)", connection);
+            command = new SqlCommand("insert into tblBillDetails(BillID, PetID,  QuantityBuy,  SubTotal,  Discount) " +
+                "values(@BillID, @PetID, @QuantityBuy, @SubTotal, @Discount)", connection);
             command.Parameters.AddWithValue("@BillID", bill.BillID);
             command.Parameters.AddWithValue("@PetID", bill.PetID);
-            command.Parameters.AddWithValue("@UserName", bill.UserName);
-            command.Parameters.AddWithValue("@Gender", bill.Gender);
-            command.Parameters.AddWithValue("@Address", bill.Address);
-            command.Parameters.AddWithValue("@Phone", bill.Phone);
             command.Parameters.AddWithValue("@QuantityBuy", bill.QuantityBuy);
             command.Parameters.AddWithValue("@SubTotal", bill.SubTotal);
             command.Parameters.AddWithValue("@Discount", bill.Discount);

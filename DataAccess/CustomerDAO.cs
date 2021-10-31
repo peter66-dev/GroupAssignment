@@ -300,6 +300,83 @@ namespace DataAccess
             return list;
         }
 
+        public CustomerObject GetACustomerByEmail(string email)
+        {
+            connection = new SqlConnection(GetConnectionString());
+            command = new SqlCommand("select CustomerID, CustomerName, Gender, Email, " +
+                "Phone, Address, AccumulatedPoint From tblCustomers " +
+                "where Email like @Email and Status = 1", connection);
+            command.Parameters.AddWithValue("@Email", "%" + email + "%");
+            CustomerObject cus = new CustomerObject();
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (reader.HasRows)
+                {
+                    if (reader.Read())
+                    {
+                        cus.CustomerID = reader.GetInt32("CustomerID");
+                        cus.CustomerName = reader.GetString("CustomerName");
+                        cus.Gender = reader.GetBoolean("Gender");
+                        cus.Email = reader.GetString("Email");
+                        cus.Phone = reader.GetString("Phone");
+                        cus.Address = reader.GetString("Address");
+                        cus.AccumulatedPoint = reader.GetInt32("AccumulatedPoint");
+                        cus.Status = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return cus;
+        }
+        public CustomerObject GetACustomerByPhone(string phone)
+        {
+            connection = new SqlConnection(GetConnectionString());
+            command = new SqlCommand("select CustomerID, CustomerName, Gender, Email, " +
+                "Phone, Address, AccumulatedPoint From tblCustomers " +
+                "where Phone = @Phone and Status = 1", connection);
+            command.Parameters.AddWithValue("@Phone", phone );
+            CustomerObject cus = new CustomerObject();
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (reader.HasRows)
+                {
+                    if (reader.Read())
+                    {
+                        cus.CustomerID = reader.GetInt32("CustomerID");
+                        cus.CustomerName = reader.GetString("CustomerName");
+                        cus.Gender = reader.GetBoolean("Gender");
+                        cus.Email = reader.GetString("Email");
+                        cus.Phone = reader.GetString("Phone");
+                        cus.Address = reader.GetString("Address");
+                        cus.AccumulatedPoint = reader.GetInt32("AccumulatedPoint");
+                        cus.Status = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return cus;
+        }
+
         public CustomerObject GetCustomerForeignKey(int cusID)
         {
             CustomerObject cus = new CustomerObject();

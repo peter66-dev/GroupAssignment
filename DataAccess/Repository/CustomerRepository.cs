@@ -11,6 +11,10 @@ namespace DataAccess.Repository
     {
         public void DeleteCustomer(int id) => CustomerDAO.Instance.DeleteCustomer(id);
 
+        public CustomerObject GetACustomerByEmail(string email) => CustomerDAO.Instance.GetACustomerByEmail(email);
+
+        public CustomerObject GetACustomerByPhone(string phone) => CustomerDAO.Instance.GetACustomerByPhone(phone);
+
         public List<CustomerObject> GetCustomerByEmail(string email) => CustomerDAO.Instance.GetCustomerByEmail(email);
 
         public CustomerObject GetCustomerByID(int id) => CustomerDAO.Instance.GetCustomerByID(id);
