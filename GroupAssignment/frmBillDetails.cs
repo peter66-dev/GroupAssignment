@@ -17,6 +17,7 @@ namespace GroupAssignment
         public IPetRepository petRepository = new PetRepository();
         public IBillRepository billRepository = new BillRepository();
         public IBillDetailRepository billDetailRepository = new BillDetailRepository();
+        public ICustomerRepository cusRepository = new CustomerRepository();
         List<PetObject> cart = new List<PetObject>();
 
         public frmBillDetails()
@@ -29,8 +30,7 @@ namespace GroupAssignment
             //btnAdd.Enabled = false;
             btnCheck.Enabled = false;
             btnSave.Enabled = false;
-            txtCusName.Focus();
-            cboCusGender.SelectedIndex = 0;
+            txtEmail.Focus();
         }
         void AddToCart(PetObject pet)
         {
@@ -51,6 +51,7 @@ namespace GroupAssignment
         void ClearPetInfor()
         {
             txtPetName.Clear();
+            txtCusName.Clear();
             txtColor.Clear();
             txtPetAge.Clear();
             txtGender.Clear();
@@ -58,54 +59,65 @@ namespace GroupAssignment
             txtUnitPrice.Clear();
         }
 
+        /* private bool CheckCustomerInfo()
+         {
+             bool check = true;
+
+             try
+             {
+                 if (txtEmail.Text.Trim().Length == 0)
+                 {
+                     txtEmail.Focus();
+                     check = false;
+                     MessageBox.Show("Sorry, Customer name is not empty please!!!", "Message", MessageBoxButtons.OK);
+                 }
+                 else if (!(txtPhone.Text.Trim().Length >= 10 && txtPhone.Text.Trim().Length <= 12 
+                     && (Decimal.TryParse(txtPhone.Text, out decimal phone) && phone > 0)))
+                 {
+                     txtPhone.Focus();
+                     check = false;
+                     MessageBox.Show("Sorry, Phone number must have [10-12] number please!!!", "Message", MessageBoxButtons.OK);
+                 }
+                 else if (txtAddress.Text.Trim().Length < 5)
+                 {
+                     txtAddress.Focus();
+                     check = false;
+                     MessageBox.Show("Sorry, customer's address don't have enough infomation!!!", "Message", MessageBoxButtons.OK);
+                 }
+                 else if (!(cboCusGender.Text.Equals("Male") || cboCusGender.Text.Equals("Female")))
+                 {
+                     cboCusGender.Focus();
+                     check = false;
+                     MessageBox.Show("Sorry, customer's gender must be {Male | Female} please!!!", "Message", MessageBoxButtons.OK);
+                 }
+                 //else if (!(txtEmail.Text.Contains("@gmail.com")) || (txtEmail.Text.Contains("@fpt.edu.vn")))
+                 //{
+                 //    txtEmail.Focus();
+                 //    check = false;
+                 //    MessageBox.Show("Sorry, customer's email must contain {@gmail.com | @fpt.edu.vn} please!!!", "Message", MessageBoxButtons.OK);
+                 //}
+             }
+             catch (Exception ex)
+             {
+                 check = false;
+             }
+             return check;
+         }*/
+
         private bool CheckCustomerInfo()
         {
             bool check = true;
-
-            try
-            {
-                if (txtCusName.Text.Trim().Length == 0)
-                {
-                    txtCusName.Focus();
-                    check = false;
-                    MessageBox.Show("Sorry, Customer name is not empty please!!!", "Message", MessageBoxButtons.OK);
-                }
-                else if (!(txtPhone.Text.Trim().Length >= 10 && txtPhone.Text.Trim().Length <= 12 
-                    && (Decimal.TryParse(txtPhone.Text, out decimal phone) && phone > 0)))
-                {
-                    txtPhone.Focus();
-                    check = false;
-                    MessageBox.Show("Sorry, Phone number must have [10-12] number please!!!", "Message", MessageBoxButtons.OK);
-                }
-                else if (txtAddress.Text.Trim().Length < 5)
-                {
-                    txtAddress.Focus();
-                    check = false;
-                    MessageBox.Show("Sorry, customer's address don't have enough infomation!!!", "Message", MessageBoxButtons.OK);
-                }
-                else if (!(cboCusGender.Text.Equals("Male") || cboCusGender.Text.Equals("Female")))
-                {
-                    cboCusGender.Focus();
-                    check = false;
-                    MessageBox.Show("Sorry, customer's gender must be {Male | Female} please!!!", "Message", MessageBoxButtons.OK);
-                }
-                //else if (!(txtEmail.Text.Contains("@gmail.com")) || (txtEmail.Text.Contains("@fpt.edu.vn")))
-                //{
-                //    txtEmail.Focus();
-                //    check = false;
-                //    MessageBox.Show("Sorry, customer's email must contain {@gmail.com | @fpt.edu.vn} please!!!", "Message", MessageBoxButtons.OK);
-                //}
-            }
-            catch (Exception ex)
+            if (txtPhone.Text.Trim().Length ==0)
             {
                 check = false;
+                MessageBox.Show("Sorry, you must fill in Email information before adding pet please!", "Check form customer message", MessageBoxButtons.OK);
+                txtEmail.Focus();
             }
             return check;
         }
-
         private void BlockCustomerInfo()
         {
-            txtCusName.Enabled = false;
+            txtEmail.Enabled = false;
             txtPhone.Enabled = false;
             txtAddress.Enabled = false;
             cboCusGender.Enabled = false;
@@ -170,7 +182,14 @@ namespace GroupAssignment
             }
             return Math.Round(result, 2);
         }
-
+        void ClearCustomerInfo()
+        {
+            txtPoint.Clear();
+            txtPhone.Clear();
+            txtEmail.Clear();
+            txtAddress.Clear();
+            cboCusGender.Text = "";
+        }
         private void LoadPetList()
         {
             try
@@ -269,26 +288,20 @@ namespace GroupAssignment
         {
             if (CheckFormCalculation())
             {
-                string cusName = txtCusName.Text.Trim();
-                string phone = txtPhone.Text.Trim();
-                string address = txtAddress.Text.Trim();
-                //string email = txtEmail.Text.Trim();
-                string gender = cboCusGender.Text.Trim();
+                CustomerObject cus = cusRepository.GetACustomerByPhone(txtPhone.Text.Trim());
 
-                int countingbills = 5 + billRepository.GetTotalBill(); // có khóa là int KHÔNG TỰ TĂNG nên phải đếm số lượng rồi +5 làm khóa
+                int countingbills = 5 + billRepository.GetTotalBill(); 
+                // có khóa là int KHÔNG TỰ TĂNG nên phải đếm số lượng rồi +5 làm khóa
                 decimal freight = Math.Round(decimal.Parse(txtFreight.Text), 2);
-                billRepository.InsertBill(countingbills, freight); // freight là phí ship!
-                //add new order details
+                decimal total = Math.Round(decimal.Parse(txtGrandTotal.Text) + freight);
+                billRepository.InsertBill(countingbills, cus.CustomerID, total, freight); // freight là phí ship!
+                //add new bill details
                 foreach (var pet in cart)
                 {
                     BillDetailObject billDetail = new BillDetailObject()
                     {
                         BillID = countingbills,
                         PetID = pet.PetID,
-                        UserName = cusName,
-                        Gender = gender.Equals("Male") ? true : false,
-                        Address = address,
-                        Phone = phone,
                         QuantityBuy = pet.QuantityInStock, // Chỗ này UnitsInStock là số lượng mua của customer
                         Discount = Math.Round(float.Parse(txtDiscount.Text), 5),
                         SubTotal = (pet.QuantityInStock * pet.ExportPrice * (decimal)(1 - Math.Round(float.Parse(txtDiscount.Text), 5))),
@@ -343,6 +356,30 @@ namespace GroupAssignment
                     ClearPetInfor();
                     MessageBox.Show("Sorry, we don't have this pet out store!" + ex.Message);
                 }
+            }
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (txtEmail.Text.Trim().Length > 0)
+            {
+                CustomerObject cus = cusRepository.GetACustomerByEmail(txtEmail.Text.Trim());
+                if (cus.CustomerID != 0)
+                {
+                    txtPhone.Text = cus.Phone;
+                    txtPoint.Text = cus.AccumulatedPoint.ToString();
+                    txtCusName.Text = cus.CustomerName;
+                    txtAddress.Text = cus.Address;
+                    cboCusGender.Text = cus.Gender ? "Male" : "Female";
+                }
+                else
+                {
+                    MessageBox.Show("Sorry, we can't find customer by this email hint!","Message",MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+                ClearCustomerInfo();
             }
         }
     }

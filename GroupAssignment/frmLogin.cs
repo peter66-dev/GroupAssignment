@@ -21,29 +21,9 @@ namespace WinformPetStore
 
         public bool isLogin { private set; get; }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void cbShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = cbShowPassword.Checked ? '\0' : '*';
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -58,6 +38,7 @@ namespace WinformPetStore
             if(adminEmail.Equals(email) && adminPassword.Equals(password))
             {
                 isLogin = true;
+                Close();
             }
             else
             {
@@ -67,6 +48,10 @@ namespace WinformPetStore
             }
         }
 
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class DefaultAccountSettings

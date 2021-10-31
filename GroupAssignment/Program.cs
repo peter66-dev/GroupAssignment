@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinformPetStore;
 
 namespace GroupAssignment
 {
@@ -25,7 +26,14 @@ namespace GroupAssignment
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            frmLogin frm = new frmLogin();
+            Application.Run(frm);
+
+            if (frm.isLogin)
+            {
+                frmMain frmMain = new frmMain();
+                Application.Run(frmMain);
+            }
         }
     }
 }

@@ -137,13 +137,14 @@ namespace GroupAssignment
             this.btnLoad.BackColor = System.Drawing.Color.SandyBrown;
             this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLoad.ForeColor = System.Drawing.Color.White;
+            this.btnLoad.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnLoad.Location = new System.Drawing.Point(886, 12);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(86, 30);
             this.btnLoad.TabIndex = 1;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnAdd
             // 
@@ -151,13 +152,14 @@ namespace GroupAssignment
             this.btnAdd.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnAdd.Location = new System.Drawing.Point(886, 55);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(86, 30);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -165,13 +167,14 @@ namespace GroupAssignment
             this.btnUpdate.BackColor = System.Drawing.Color.SandyBrown;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnUpdate.Location = new System.Drawing.Point(886, 100);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(86, 30);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -179,13 +182,14 @@ namespace GroupAssignment
             this.btnDelete.BackColor = System.Drawing.Color.SandyBrown;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnDelete.Location = new System.Drawing.Point(886, 144);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 30);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // panel1
             // 
@@ -300,13 +304,14 @@ namespace GroupAssignment
             this.btnStatistic.BackColor = System.Drawing.Color.SandyBrown;
             this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStatistic.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnStatistic.ForeColor = System.Drawing.Color.White;
+            this.btnStatistic.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnStatistic.Location = new System.Drawing.Point(432, 250);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Size = new System.Drawing.Size(86, 30);
             this.btnStatistic.TabIndex = 10;
             this.btnStatistic.Text = "Statistic";
             this.btnStatistic.UseVisualStyleBackColor = false;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // btnAscSort
             // 
@@ -314,13 +319,14 @@ namespace GroupAssignment
             this.btnAscSort.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAscSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAscSort.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAscSort.ForeColor = System.Drawing.Color.White;
+            this.btnAscSort.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnAscSort.Location = new System.Drawing.Point(781, 215);
             this.btnAscSort.Name = "btnAscSort";
             this.btnAscSort.Size = new System.Drawing.Size(191, 30);
             this.btnAscSort.TabIndex = 5;
             this.btnAscSort.Text = "Sort Total Ascending";
             this.btnAscSort.UseVisualStyleBackColor = false;
+            this.btnAscSort.Click += new System.EventHandler(this.btnAscSort_Click);
             // 
             // btnDescSort
             // 
@@ -328,13 +334,14 @@ namespace GroupAssignment
             this.btnDescSort.BackColor = System.Drawing.Color.SandyBrown;
             this.btnDescSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDescSort.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDescSort.ForeColor = System.Drawing.Color.White;
+            this.btnDescSort.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnDescSort.Location = new System.Drawing.Point(781, 253);
             this.btnDescSort.Name = "btnDescSort";
             this.btnDescSort.Size = new System.Drawing.Size(191, 30);
             this.btnDescSort.TabIndex = 6;
             this.btnDescSort.Text = "Sort Total Descending";
             this.btnDescSort.UseVisualStyleBackColor = false;
+            this.btnDescSort.Click += new System.EventHandler(this.btnDescSort_Click);
             // 
             // txtTotalStatistic
             // 
@@ -423,10 +430,12 @@ namespace GroupAssignment
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.dgvOrderList);
             this.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "frmBillManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bill Management";
+            this.Load += new System.EventHandler(this.frmBillManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

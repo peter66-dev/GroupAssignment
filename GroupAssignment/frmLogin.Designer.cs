@@ -68,7 +68,6 @@ namespace WinformPetStore
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 1;
             this.btnHome.TabStop = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // label1
             // 
@@ -97,7 +96,6 @@ namespace WinformPetStore
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(612, 151);
             this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label4
             // 
@@ -111,8 +109,9 @@ namespace WinformPetStore
             // 
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLogin.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnLogin.Location = new System.Drawing.Point(392, 40);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(116, 52);
@@ -125,6 +124,7 @@ namespace WinformPetStore
             // 
             this.cbShowPassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbShowPassword.AutoSize = true;
+            this.cbShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbShowPassword.ForeColor = System.Drawing.Color.SandyBrown;
             this.cbShowPassword.Location = new System.Drawing.Point(278, 98);
             this.cbShowPassword.Name = "cbShowPassword";
@@ -174,7 +174,6 @@ namespace WinformPetStore
             this.label2.Size = new System.Drawing.Size(69, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Email:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // frmLogin
             // 
@@ -185,7 +184,9 @@ namespace WinformPetStore
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmLogin";
-            this.Text = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();

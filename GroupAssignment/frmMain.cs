@@ -47,12 +47,12 @@ namespace GroupAssignment
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color1 = Color.FromArgb(251, 115, 24);
+            public static Color color2 = Color.FromArgb(251, 115, 24);
+            public static Color color3 = Color.FromArgb(251, 115, 24);
+            public static Color color4 = Color.FromArgb(251, 115, 24);
+            public static Color color5 = Color.FromArgb(251, 115, 24);
+            public static Color color6 = Color.FromArgb(251, 115, 24);
         }
         //Methods
         private void ActivateButton(object senderBtn, Color color)
@@ -62,7 +62,7 @@ namespace GroupAssignment
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.BackColor = Color.FromArgb(76, 55, 49);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -82,7 +82,7 @@ namespace GroupAssignment
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+                currentBtn.BackColor = Color.FromArgb(76, 55, 49);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Gainsboro;
@@ -135,6 +135,7 @@ namespace GroupAssignment
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new frmCustomerManagement());
         }
         private void btnBills_Click(object sender, EventArgs e)
         {
@@ -193,11 +194,6 @@ namespace GroupAssignment
             {
                 e.Cancel = true;
             }
-        }
-
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

@@ -39,17 +39,20 @@ namespace WinformPetStore
 
                 txtMoney.Text = billRepository.GetTotalImportMoney().ToString();
                 txtPayment.Text = Math.Round(payment, 2).ToString();
-                income = decimal.Parse(txtMoney.Text) - payment;
+                txtBills.Text = list.Count.ToString();
+                income = payment - decimal.Parse(txtMoney.Text);
                 txtIncome.Text = Math.Round(income, 2).ToString();
                 dgvStatisticsList.DataSource = null;
                 dgvStatisticsList.DataSource = source;
 
                 dgvStatisticsList.Columns["BillID"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dgvStatisticsList.Columns["CustomerID"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvStatisticsList.Columns["Date"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvStatisticsList.Columns["Total"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvStatisticsList.Columns["Status"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
                 dgvStatisticsList.Columns["BillID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dgvStatisticsList.Columns["CustomerID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvStatisticsList.Columns["Date"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 dgvStatisticsList.Columns["Total"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 dgvStatisticsList.Columns["Status"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
