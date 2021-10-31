@@ -342,7 +342,6 @@ namespace WinformPetStore
             this.txtPoint.ReadOnly = true;
             this.txtPoint.Size = new System.Drawing.Size(202, 25);
             this.txtPoint.TabIndex = 999;
-            this.txtPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbPoint
             // 
@@ -364,7 +363,6 @@ namespace WinformPetStore
             this.txtCusName.ReadOnly = true;
             this.txtCusName.Size = new System.Drawing.Size(202, 25);
             this.txtCusName.TabIndex = 999;
-            this.txtCusName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbCustomerName
             // 
@@ -386,7 +384,6 @@ namespace WinformPetStore
             this.txtCusID.ReadOnly = true;
             this.txtCusID.Size = new System.Drawing.Size(202, 25);
             this.txtCusID.TabIndex = 999;
-            this.txtCusID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbCustomerID
             // 

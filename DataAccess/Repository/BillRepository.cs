@@ -15,7 +15,7 @@ namespace DataAccess.Repository
 
         public int GetTotalBill() => BillDAO.Instance.GetTotalBill();
 
-        public void InsertBill(int id, decimal total) => BillDAO.Instance.InsertBill(id, total);
+        public void InsertBill(int id, int cusID, decimal total, decimal freight) => BillDAO.Instance.InsertBill(id, cusID, total, freight);
 
         public void RemoveBill(int id) => BillDAO.Instance.RemoveBill(id);
 

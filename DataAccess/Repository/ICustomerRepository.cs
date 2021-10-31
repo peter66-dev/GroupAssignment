@@ -24,6 +24,7 @@ namespace DataAccess.Repository
         public void DeleteCustomer(int id);
         public List<CustomerObject> SortCustomerAscendingName();
         public List<CustomerObject> SortCustomerDescendingName();
-
+        public CustomerObject GetACustomerByEmail(string email);
+        public CustomerObject GetACustomerByPhone(string phone);
     }
 }

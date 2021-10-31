@@ -48,7 +48,7 @@ namespace DataAccess
         {
             connection = new SqlConnection(GetConnectionString());
             List<BillObject> list = new List<BillObject>();
-            command = new SqlCommand("select BillID, Total, Date, Status from tblBills", connection);
+            command = new SqlCommand("select BillID, CustomerID, Total, Date, Status from tblBills where status = 1", connection);
             try
             {
                 connection.Open();
@@ -59,6 +59,7 @@ namespace DataAccess
                     {
                         BillObject bill = new BillObject();
                         bill.BillID = rs.GetInt32("BillID");
+                        bill.CustomerID = rs.GetInt32("CustomerID");
                         bill.Total = Math.Round(rs.GetDecimal("Total"));
                         bill.Date = rs.GetDateTime("Date");
                         bill.Status = rs.GetBoolean("Status");
@@ -81,7 +82,7 @@ namespace DataAccess
         {
             connection = new SqlConnection(GetConnectionString());
             List<BillObject> list = new List<BillObject>();
-            command = new SqlCommand("select BillID, Total, Date, Status from tblBills ORDER BY Total asc", connection);
+            command = new SqlCommand("select BillID, CustomerID, Total, Date, Status from tblBills where status = 1 ORDER BY Total asc", connection);
             try
             {
                 connection.Open();
@@ -92,6 +93,7 @@ namespace DataAccess
                     {
                         BillObject bill = new BillObject();
                         bill.BillID = rs.GetInt32("BillID");
+                        bill.CustomerID = rs.GetInt32("CustomerID");
                         bill.Total = Math.Round(rs.GetDecimal("Total"));
                         bill.Date = rs.GetDateTime("Date");
                         bill.Status = rs.GetBoolean("Status");
@@ -115,7 +117,7 @@ namespace DataAccess
         {
             connection = new SqlConnection(GetConnectionString());
             List<BillObject> list = new List<BillObject>();
-            command = new SqlCommand("select BillID, Total, Date, Status from tblBills ORDER BY Total desc", connection);
+            command = new SqlCommand("select BillID, CustomerID, Total, Date, Status from tblBills where status = 1 ORDER BY Total desc", connection);
             try
             {
                 connection.Open();
@@ -126,6 +128,7 @@ namespace DataAccess
                     {
                         BillObject bill = new BillObject();
                         bill.BillID = rs.GetInt32("BillID");
+                        bill.CustomerID = rs.GetInt32("CustomerID");
                         bill.Total = Math.Round(rs.GetDecimal("Total"));
                         bill.Date = rs.GetDateTime("Date");
                         bill.Status = rs.GetBoolean("Status");
@@ -149,7 +152,7 @@ namespace DataAccess
         {
             connection = new SqlConnection(GetConnectionString());
             BillObject bill = new BillObject();
-            command = new SqlCommand("select Total, Date, Status from tblBills where BillID = @BillID", connection);
+            command = new SqlCommand("select CustomerID, Total, Date, Status from tblBills where BillID = @BillID", connection);
             command.Parameters.AddWithValue("@BillID", id);
             try
             {
@@ -160,6 +163,7 @@ namespace DataAccess
                     if (rs.Read())
                     {
                         bill.BillID = id;
+                        bill.CustomerID = rs.GetInt32("CustomerID");
                         bill.Total = rs.GetDecimal("Total");
                         bill.Date = rs.GetDateTime("Date");
                         bill.Status = rs.GetBoolean("Status");
@@ -207,13 +211,15 @@ namespace DataAccess
             return count;
         }
 
-        public void InsertBill(int id, decimal total)// không nên để khóa chính tự tăng ở đây
+        public void InsertBill(int billID, int cusID, decimal total, decimal freight)// không nên để khóa chính tự tăng ở đây
         {
             connection = new SqlConnection(GetConnectionString());
-            command = new SqlCommand("Insert into tblBills (BillID, Total, Date, Status) " +
-                "values(@BillID, @Total, getdate(), 1)", connection);
-            command.Parameters.AddWithValue("@BillID", id);
+            command = new SqlCommand("Insert into tblBills (BillID, CustomerID, Total, Date, Status, Freight) " +
+                "values(@BillID, @CustomerID, @Total, getdate(), 1, @Freight)", connection);
+            command.Parameters.AddWithValue("@BillID", billID);
+            command.Parameters.AddWithValue("@CustomerID", cusID);
             command.Parameters.AddWithValue("@Total", total);
+            command.Parameters.AddWithValue("@Freight", freight);
             try
             {
                 connection.Open();
@@ -273,7 +279,8 @@ namespace DataAccess
         {
             connection = new SqlConnection(GetConnectionString());
             List<BillObject> list = new List<BillObject>();
-            command = new SqlCommand("select BillID, Total, Date, Status from tblBills where @StartDate <= [Date] AND @EndDate >= [Date] and Status = 1", connection);
+            command = new SqlCommand("select BillID, CustomerID, Total, Date, Status from tblBills " +
+                "where @StartDate <= [Date] AND @EndDate >= [Date] and Status = 1", connection);
             command.Parameters.AddWithValue("@StartDate", start);
             command.Parameters.AddWithValue("@EndDate", end);
             try
@@ -286,7 +293,8 @@ namespace DataAccess
                     {
                         BillObject bill = new BillObject();
                         bill.BillID = rs.GetInt32("BillID");
-                        bill.Total = Math.Round(rs.GetDecimal("Total"));
+                        bill.CustomerID = rs.GetInt32("CustomerID");
+                        bill.Total = Math.Round(rs.GetDecimal("Total") ,2);
                         bill.Date = rs.GetDateTime("Date");
                         bill.Status = true;
                         list.Add(bill);
@@ -308,7 +316,7 @@ namespace DataAccess
         public decimal GetTotalImportMoney()
         {
             decimal total = 0;
-            string sql = "select Statistic.PetID, p.ImportPrice, Statistic.total as [Sold  Quantity] " +
+            string sql = "select Statistic.PetID, p.ImportPrice, Statistic.total as [Sold Quantity] " +
                 "from (select PetID, sum(QuantityBuy) as total from tblBillDetails where BillID in " +
                 "(select BillID from tblBills where Status = 1) group by PetID) Statistic " +
                 "left join tblPets p on Statistic.PetID = p.PetID";
@@ -322,7 +330,7 @@ namespace DataAccess
                 {
                     while (rs.Read())
                     {
-                        total += rs.GetDecimal("ImportPrice") * rs.GetInt32("Sold  Quantity");
+                        total += rs.GetDecimal("ImportPrice") * rs.GetInt32("Sold Quantity");
                     }
                 }
             }

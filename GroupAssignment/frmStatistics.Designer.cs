@@ -43,6 +43,8 @@ namespace WinformPetStore
             this.txtIncome = new System.Windows.Forms.TextBox();
             this.btnSort = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbBills = new System.Windows.Forms.Label();
+            this.txtBills = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatisticsList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -204,6 +206,29 @@ namespace WinformPetStore
             this.label1.TabIndex = 1033;
             this.label1.Text = "(VND)";
             // 
+            // lbBills
+            // 
+            this.lbBills.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbBills.AutoSize = true;
+            this.lbBills.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbBills.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbBills.Location = new System.Drawing.Point(823, 16);
+            this.lbBills.Name = "lbBills";
+            this.lbBills.Size = new System.Drawing.Size(46, 22);
+            this.lbBills.TabIndex = 1028;
+            this.lbBills.Text = "Bills";
+            // 
+            // txtBills
+            // 
+            this.txtBills.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBills.Enabled = false;
+            this.txtBills.Location = new System.Drawing.Point(890, 18);
+            this.txtBills.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBills.Name = "txtBills";
+            this.txtBills.Size = new System.Drawing.Size(57, 22);
+            this.txtBills.TabIndex = 1029;
+            this.txtBills.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmStatistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -214,6 +239,8 @@ namespace WinformPetStore
             this.Controls.Add(this.btnSort);
             this.Controls.Add(this.txtIncome);
             this.Controls.Add(this.lbIncome);
+            this.Controls.Add(this.txtBills);
+            this.Controls.Add(this.lbBills);
             this.Controls.Add(this.txtMoney);
             this.Controls.Add(this.lbTotalMoney);
             this.Controls.Add(this.btnSearch);
@@ -250,5 +277,7 @@ namespace WinformPetStore
         private System.Windows.Forms.TextBox txtIncome;
         private System.Windows.Forms.Button btnSort;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbBills;
+        private System.Windows.Forms.TextBox txtBills;
     }
 }

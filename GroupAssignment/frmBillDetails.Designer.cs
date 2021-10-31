@@ -70,14 +70,18 @@ namespace GroupAssignment
             this.cboCusGender = new System.Windows.Forms.ComboBox();
             this.lbAddress = new System.Windows.Forms.Label();
             this.lbCusGender = new System.Windows.Forms.Label();
-            this.lbCusName = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
-            this.txtCusName = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.lbCusInfo = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.lbColor = new System.Windows.Forms.Label();
+            this.lbPoint = new System.Windows.Forms.Label();
+            this.txtPoint = new System.Windows.Forms.TextBox();
+            this.lbCusName = new System.Windows.Forms.Label();
+            this.txtCusName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuantityBuy)).BeginInit();
             this.SuspendLayout();
@@ -267,7 +271,7 @@ namespace GroupAssignment
             this.btnAdd.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(754, 38);
+            this.btnAdd.Location = new System.Drawing.Point(872, 80);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 45);
@@ -515,14 +519,16 @@ namespace GroupAssignment
             // 
             // cboCusGender
             // 
+            this.cboCusGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboCusGender.Enabled = false;
             this.cboCusGender.FormattingEnabled = true;
             this.cboCusGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cboCusGender.Location = new System.Drawing.Point(113, 68);
+            this.cboCusGender.Location = new System.Drawing.Point(754, 73);
             this.cboCusGender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboCusGender.Name = "cboCusGender";
-            this.cboCusGender.Size = new System.Drawing.Size(124, 23);
+            this.cboCusGender.Size = new System.Drawing.Size(83, 23);
             this.cboCusGender.TabIndex = 3;
             // 
             // lbAddress
@@ -539,25 +545,26 @@ namespace GroupAssignment
             // 
             // lbCusGender
             // 
+            this.lbCusGender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbCusGender.AutoSize = true;
             this.lbCusGender.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbCusGender.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lbCusGender.Location = new System.Drawing.Point(12, 72);
+            this.lbCusGender.Location = new System.Drawing.Point(636, 75);
             this.lbCusGender.Name = "lbCusGender";
             this.lbCusGender.Size = new System.Drawing.Size(47, 15);
             this.lbCusGender.TabIndex = 1000;
             this.lbCusGender.Text = "Gender";
             // 
-            // lbCusName
+            // lbEmail
             // 
-            this.lbCusName.AutoSize = true;
-            this.lbCusName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCusName.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lbCusName.Location = new System.Drawing.Point(12, 45);
-            this.lbCusName.Name = "lbCusName";
-            this.lbCusName.Size = new System.Drawing.Size(93, 15);
-            this.lbCusName.TabIndex = 1000;
-            this.lbCusName.Text = "Customer name";
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbEmail.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbEmail.Location = new System.Drawing.Point(12, 45);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(38, 15);
+            this.lbEmail.TabIndex = 1000;
+            this.lbEmail.Text = "Email";
             // 
             // lbPhone
             // 
@@ -571,17 +578,19 @@ namespace GroupAssignment
             this.lbPhone.TabIndex = 333;
             this.lbPhone.Text = "Phone";
             // 
-            // txtCusName
+            // txtEmail
             // 
-            this.txtCusName.Location = new System.Drawing.Point(113, 38);
-            this.txtCusName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCusName.Name = "txtCusName";
-            this.txtCusName.Size = new System.Drawing.Size(181, 22);
-            this.txtCusName.TabIndex = 1;
+            this.txtEmail.Location = new System.Drawing.Point(113, 38);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(181, 22);
+            this.txtEmail.TabIndex = 1;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPhone
             // 
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPhone.Enabled = false;
             this.txtPhone.Location = new System.Drawing.Point(449, 41);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
@@ -602,6 +611,7 @@ namespace GroupAssignment
             // txtAddress
             // 
             this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAddress.Enabled = false;
             this.txtAddress.Location = new System.Drawing.Point(449, 72);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Multiline = true;
@@ -632,6 +642,49 @@ namespace GroupAssignment
             this.lbColor.TabIndex = 333;
             this.lbColor.Text = "Color";
             // 
+            // lbPoint
+            // 
+            this.lbPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbPoint.AutoSize = true;
+            this.lbPoint.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbPoint.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbPoint.Location = new System.Drawing.Point(634, 45);
+            this.lbPoint.Name = "lbPoint";
+            this.lbPoint.Size = new System.Drawing.Size(36, 15);
+            this.lbPoint.TabIndex = 333;
+            this.lbPoint.Text = "Point";
+            // 
+            // txtPoint
+            // 
+            this.txtPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPoint.Enabled = false;
+            this.txtPoint.Location = new System.Drawing.Point(754, 41);
+            this.txtPoint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPoint.Name = "txtPoint";
+            this.txtPoint.Size = new System.Drawing.Size(83, 22);
+            this.txtPoint.TabIndex = 2;
+            this.txtPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lbCusName
+            // 
+            this.lbCusName.AutoSize = true;
+            this.lbCusName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCusName.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lbCusName.Location = new System.Drawing.Point(12, 76);
+            this.lbCusName.Name = "lbCusName";
+            this.lbCusName.Size = new System.Drawing.Size(93, 15);
+            this.lbCusName.TabIndex = 1000;
+            this.lbCusName.Text = "Customer name";
+            // 
+            // txtCusName
+            // 
+            this.txtCusName.Enabled = false;
+            this.txtCusName.Location = new System.Drawing.Point(113, 69);
+            this.txtCusName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCusName.Name = "txtCusName";
+            this.txtCusName.Size = new System.Drawing.Size(181, 22);
+            this.txtCusName.TabIndex = 1;
+            // 
             // frmBillDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -640,11 +693,15 @@ namespace GroupAssignment
             this.ClientSize = new System.Drawing.Size(959, 561);
             this.Controls.Add(this.lbCusInfo);
             this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtPoint);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.lbVND);
+            this.Controls.Add(this.lbPoint);
             this.Controls.Add(this.txtCusName);
-            this.Controls.Add(this.lbPhone);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lbCusName);
+            this.Controls.Add(this.lbPhone);
+            this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.txtQuantityBuy);
             this.Controls.Add(this.lbCusGender);
             this.Controls.Add(this.btnCheck);
@@ -735,9 +792,9 @@ namespace GroupAssignment
         private System.Windows.Forms.ComboBox cboCusGender;
         private System.Windows.Forms.Label lbAddress;
         private System.Windows.Forms.Label lbCusGender;
-        private System.Windows.Forms.Label lbCusName;
+        private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.Label lbPhone;
-        private System.Windows.Forms.TextBox txtCusName;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lbCusInfo;
         private System.Windows.Forms.TextBox txtAddress;
@@ -748,5 +805,9 @@ namespace GroupAssignment
         private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantityBuy;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Label lbPoint;
+        private System.Windows.Forms.TextBox txtPoint;
+        private System.Windows.Forms.Label lbCusName;
+        private System.Windows.Forms.TextBox txtCusName;
     }
 }

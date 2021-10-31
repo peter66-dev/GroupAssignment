@@ -11,10 +11,6 @@ namespace Business_Object
         public int BillDetailID { get; set; }
         public int BillID { get; set; }
         public int PetID { get; set; }
-        public string UserName { get; set; }
-        public bool Gender { get; set; }
-        public string Address { get; set; }
-        public string Phone { get; set; }
         public int QuantityBuy { get; set; }
         public decimal SubTotal { get; set; }
         public double Discount { get; set; }
@@ -22,16 +18,11 @@ namespace Business_Object
         {
 
         }
-        public BillDetailObject(int billdetailid, int billid, int petid, string username, bool gen, string addr, 
-            string phone, int quantitybuy, decimal subTotal, double discount)
+        public BillDetailObject(int billdetailid, int billid, int petid, int quantitybuy, decimal subTotal, double discount)
         {
             BillDetailID = billdetailid;
             BillID = billdetailid;
-            PetID = billid;
-            UserName = username;
-            Gender = gen;
-            Address = addr;
-            Phone = phone;
+            PetID = petid;
             QuantityBuy = quantitybuy;
             SubTotal = subTotal;
             Discount = discount;
