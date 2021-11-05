@@ -146,58 +146,66 @@ namespace WinformPetStore
             // btnLoad
             // 
             this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLoad.BackColor = System.Drawing.Color.SandyBrown;
             this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLoad.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnLoad.Location = new System.Drawing.Point(951, 22);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(86, 38);
             this.btnLoad.TabIndex = 1;
             this.btnLoad.Text = "LOAD";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnAdd.Location = new System.Drawing.Point(951, 72);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(86, 38);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "ADD";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.BackColor = System.Drawing.Color.SandyBrown;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnUpdate.Location = new System.Drawing.Point(951, 117);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(86, 38);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "UPDATE";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.SandyBrown;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnDelete.Location = new System.Drawing.Point(951, 172);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 38);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "DELETE";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.panel1.Controls.Add(this.lbPhone);
             this.panel1.Controls.Add(this.cboGender);
             this.panel1.Controls.Add(this.lbGender);
@@ -214,8 +222,8 @@ namespace WinformPetStore
             this.panel1.Controls.Add(this.lbCustomerName);
             this.panel1.Controls.Add(this.txtCusID);
             this.panel1.Controls.Add(this.lbCustomerID);
-            this.panel1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.panel1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.panel1.ForeColor = System.Drawing.Color.SandyBrown;
             this.panel1.Location = new System.Drawing.Point(15, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(900, 219);
@@ -224,11 +232,11 @@ namespace WinformPetStore
             // lbPhone
             // 
             this.lbPhone.AutoSize = true;
-            this.lbPhone.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPhone.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPhone.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbPhone.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPhone.Location = new System.Drawing.Point(461, 119);
             this.lbPhone.Name = "lbPhone";
-            this.lbPhone.Size = new System.Drawing.Size(41, 15);
+            this.lbPhone.Size = new System.Drawing.Size(61, 22);
             this.lbPhone.TabIndex = 99;
             this.lbPhone.Text = "Phone";
             // 
@@ -248,11 +256,11 @@ namespace WinformPetStore
             // lbGender
             // 
             this.lbGender.AutoSize = true;
-            this.lbGender.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbGender.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbGender.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbGender.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbGender.Location = new System.Drawing.Point(21, 118);
             this.lbGender.Name = "lbGender";
-            this.lbGender.Size = new System.Drawing.Size(47, 15);
+            this.lbGender.Size = new System.Drawing.Size(71, 22);
             this.lbGender.TabIndex = 99;
             this.lbGender.Text = "Gender";
             // 
@@ -292,22 +300,22 @@ namespace WinformPetStore
             // lbAddress
             // 
             this.lbAddress.AutoSize = true;
-            this.lbAddress.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbAddress.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbAddress.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbAddress.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbAddress.Location = new System.Drawing.Point(461, 174);
             this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(52, 15);
+            this.lbAddress.Size = new System.Drawing.Size(76, 22);
             this.lbAddress.TabIndex = 999;
             this.lbAddress.Text = "Address";
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbEmail.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbEmail.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbEmail.Location = new System.Drawing.Point(461, 20);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(38, 15);
+            this.lbEmail.Size = new System.Drawing.Size(58, 22);
             this.lbEmail.TabIndex = 999;
             this.lbEmail.Text = "Email";
             // 
@@ -325,11 +333,11 @@ namespace WinformPetStore
             // lbStatus
             // 
             this.lbStatus.AutoSize = true;
-            this.lbStatus.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbStatus.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbStatus.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbStatus.Location = new System.Drawing.Point(461, 72);
             this.lbStatus.Name = "lbStatus";
-            this.lbStatus.Size = new System.Drawing.Size(42, 15);
+            this.lbStatus.Size = new System.Drawing.Size(61, 22);
             this.lbStatus.TabIndex = 999;
             this.lbStatus.Text = "Status";
             // 
@@ -346,11 +354,11 @@ namespace WinformPetStore
             // lbPoint
             // 
             this.lbPoint.AutoSize = true;
-            this.lbPoint.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPoint.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbPoint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbPoint.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbPoint.Location = new System.Drawing.Point(21, 173);
             this.lbPoint.Name = "lbPoint";
-            this.lbPoint.Size = new System.Drawing.Size(36, 15);
+            this.lbPoint.Size = new System.Drawing.Size(53, 22);
             this.lbPoint.TabIndex = 999;
             this.lbPoint.Text = "Point";
             // 
@@ -367,11 +375,11 @@ namespace WinformPetStore
             // lbCustomerName
             // 
             this.lbCustomerName.AutoSize = true;
-            this.lbCustomerName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCustomerName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCustomerName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCustomerName.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbCustomerName.Location = new System.Drawing.Point(21, 70);
             this.lbCustomerName.Name = "lbCustomerName";
-            this.lbCustomerName.Size = new System.Drawing.Size(95, 15);
+            this.lbCustomerName.Size = new System.Drawing.Size(143, 22);
             this.lbCustomerName.TabIndex = 999;
             this.lbCustomerName.Text = "Customer Name";
             // 
@@ -388,25 +396,27 @@ namespace WinformPetStore
             // lbCustomerID
             // 
             this.lbCustomerID.AutoSize = true;
-            this.lbCustomerID.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCustomerID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCustomerID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCustomerID.ForeColor = System.Drawing.Color.SandyBrown;
             this.lbCustomerID.Location = new System.Drawing.Point(21, 19);
             this.lbCustomerID.Name = "lbCustomerID";
-            this.lbCustomerID.Size = new System.Drawing.Size(77, 15);
+            this.lbCustomerID.Size = new System.Drawing.Size(116, 22);
             this.lbCustomerID.TabIndex = 999;
             this.lbCustomerID.Text = "Customer ID";
             // 
             // btnSort
             // 
             this.btnSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSort.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSort.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSort.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSort.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSort.Location = new System.Drawing.Point(855, 250);
             this.btnSort.Name = "btnSort";
             this.btnSort.Size = new System.Drawing.Size(191, 30);
             this.btnSort.TabIndex = 5;
             this.btnSort.Text = "SORT BY NAME";
-            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.UseVisualStyleBackColor = false;
             this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
             // 
             // txtEmailSearch
@@ -436,7 +446,7 @@ namespace WinformPetStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(55)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1058, 624);
             this.Controls.Add(this.lbSearch);
             this.Controls.Add(this.btnSort);

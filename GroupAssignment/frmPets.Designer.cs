@@ -281,7 +281,7 @@ namespace WinformPetStore
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnAdd.Location = new System.Drawing.Point(840, 257);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
@@ -297,7 +297,7 @@ namespace WinformPetStore
             this.btnDelete.BackColor = System.Drawing.Color.SandyBrown;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Enabled = false;
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnDelete.Location = new System.Drawing.Point(840, 398);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
@@ -334,7 +334,7 @@ namespace WinformPetStore
             this.btnSave.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Enabled = false;
-            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSave.Location = new System.Drawing.Point(840, 327);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
@@ -387,6 +387,7 @@ namespace WinformPetStore
             this.Controls.Add(this.txtPetID);
             this.Controls.Add(this.lbPetInformation);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.MinimumSize = new System.Drawing.Size(975, 600);
             this.Name = "frmPetss";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

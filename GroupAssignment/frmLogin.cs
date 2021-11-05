@@ -38,6 +38,7 @@ namespace WinformPetStore
             if(adminEmail.Equals(email) && adminPassword.Equals(password))
             {
                 isLogin = true;
+                Close();
             }
             else
             {
@@ -47,6 +48,10 @@ namespace WinformPetStore
             }
         }
 
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class DefaultAccountSettings

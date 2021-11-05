@@ -270,7 +270,7 @@ namespace GroupAssignment
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.SandyBrown;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnAdd.Location = new System.Drawing.Point(872, 80);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
@@ -285,7 +285,7 @@ namespace GroupAssignment
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSave.Location = new System.Drawing.Point(754, 486);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
@@ -485,7 +485,7 @@ namespace GroupAssignment
             this.btnCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCheck.BackColor = System.Drawing.Color.SandyBrown;
             this.btnCheck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCheck.ForeColor = System.Drawing.Color.White;
+            this.btnCheck.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnCheck.Location = new System.Drawing.Point(635, 486);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCheck.Name = "btnCheck";
@@ -740,7 +740,7 @@ namespace GroupAssignment
             this.Controls.Add(this.lbPetInfo);
             this.Controls.Add(this.dgvCart);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.SandyBrown;
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MinimumSize = new System.Drawing.Size(975, 600);
             this.Name = "frmBillDetails";

@@ -130,6 +130,7 @@ namespace WinformPetStore
             this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearch.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSearch.Location = new System.Drawing.Point(418, 115);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
@@ -186,6 +187,7 @@ namespace WinformPetStore
             this.btnSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSort.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSort.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSort.Location = new System.Drawing.Point(832, 115);
             this.btnSort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSort.Name = "btnSort";
@@ -252,6 +254,7 @@ namespace WinformPetStore
             this.Controls.Add(this.dgvStatisticsList);
             this.Controls.Add(this.lbTotalPayment);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.MinimumSize = new System.Drawing.Size(975, 600);
             this.Name = "frmStatistics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

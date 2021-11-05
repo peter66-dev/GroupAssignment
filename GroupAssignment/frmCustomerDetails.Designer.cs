@@ -29,6 +29,7 @@ namespace WinformPetStore
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerDetails));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.lbTitle = new System.Windows.Forms.Label();
@@ -71,6 +72,7 @@ namespace WinformPetStore
             // btnHome
             // 
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.Location = new System.Drawing.Point(12, 12);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(112, 90);
@@ -120,7 +122,7 @@ namespace WinformPetStore
             // 
             this.txtPoint.Location = new System.Drawing.Point(162, 214);
             this.txtPoint.Name = "txtPoint";
-            this.txtPoint.Size = new System.Drawing.Size(120, 23);
+            this.txtPoint.Size = new System.Drawing.Size(120, 22);
             this.txtPoint.TabIndex = 7;
             this.txtPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -180,7 +182,7 @@ namespace WinformPetStore
             // 
             this.txtPhone.Location = new System.Drawing.Point(509, 92);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(174, 23);
+            this.txtPhone.Size = new System.Drawing.Size(174, 22);
             this.txtPhone.TabIndex = 4;
             // 
             // label3
@@ -198,16 +200,16 @@ namespace WinformPetStore
             // 
             this.txtEmail.Location = new System.Drawing.Point(162, 152);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(174, 23);
+            this.txtEmail.Size = new System.Drawing.Size(174, 22);
             this.txtEmail.TabIndex = 5;
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnCancel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnCancel.BackColor = System.Drawing.Color.SandyBrown;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.Color.PaleGreen;
+            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnCancel.Location = new System.Drawing.Point(387, 315);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(116, 52);
@@ -219,10 +221,10 @@ namespace WinformPetStore
             // btnSave
             // 
             this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSave.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnSave.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSave.ForeColor = System.Drawing.Color.Maroon;
+            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnSave.Location = new System.Drawing.Point(210, 315);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(116, 52);
@@ -246,7 +248,7 @@ namespace WinformPetStore
             // 
             this.txtCusName.Location = new System.Drawing.Point(162, 94);
             this.txtCusName.Name = "txtCusName";
-            this.txtCusName.Size = new System.Drawing.Size(174, 23);
+            this.txtCusName.Size = new System.Drawing.Size(174, 22);
             this.txtCusName.TabIndex = 3;
             // 
             // label1
@@ -265,7 +267,7 @@ namespace WinformPetStore
             this.txtCusID.Enabled = false;
             this.txtCusID.Location = new System.Drawing.Point(162, 38);
             this.txtCusID.Name = "txtCusID";
-            this.txtCusID.Size = new System.Drawing.Size(76, 23);
+            this.txtCusID.Size = new System.Drawing.Size(76, 22);
             this.txtCusID.TabIndex = 1;
             this.txtCusID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -292,10 +294,12 @@ namespace WinformPetStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(714, 591);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.MinimumSize = new System.Drawing.Size(730, 630);
             this.Name = "frmCustomerDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

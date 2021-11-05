@@ -287,5 +287,44 @@ namespace DataAccess
                 connection.Close();
             }
         }
+        public List<PetObject> GetPetsByCategoryID(int id)
+        {
+            connection = new SqlConnection(GetConnectionString());
+            List<PetObject> list = new List<PetObject>();
+            command = new SqlCommand("select PetID, PetName, Age, Gender, Color, QuantityInStock, CategoryID, ImportPrice, ExportPrice, Status from tblPets", connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader rs = command.ExecuteReader(CommandBehavior.CloseConnection);
+                if (rs.HasRows)
+                {
+                    while (rs.Read())
+                    {
+                        PetObject pet = new PetObject();
+                        pet.PetID = rs.GetInt32("PetID");
+                        pet.PetName = rs.GetString("PetName");
+                        pet.Age = rs.GetInt32("Age");
+                        pet.Gender = rs.GetBoolean("Gender");
+                        pet.QuantityInStock = rs.GetInt32("QuantityInStock");
+                        pet.Color = rs.GetString("Color");
+                        pet.CategoryID = rs.GetInt32("CategoryID");
+                        pet.ImportPrice = Math.Round(rs.GetDecimal("ImportPrice"), 2);
+                        pet.ExportPrice = Math.Round(rs.GetDecimal("ExportPrice"), 2);
+                        pet.Status = rs.GetBoolean("Status");
+                        list.Add(pet);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return list;
+        }
     }
 }
